@@ -1,8 +1,6 @@
 {
   "pages": [
-    "pages/in/in",
-    "pages/home/home",
-    "pages/index/index"
+    "pages/home/home"
     
   ],
   "window": {
