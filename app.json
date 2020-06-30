@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/in/in",
     "pages/home/home",
     "pages/index/index"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",
