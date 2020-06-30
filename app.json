@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#46AEF0",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "背古诗助手"
+  },
+  "sitemapLocation": "sitemap36.json"
+}
