@@ -1,1 +1,53 @@
-/* pages/in/in.wxss */
+/* zz的渲染库 */
+.shi-ju{
+  margin-top: 160rpx;
+  margin-right: 70rpx;
+  margin-left: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25%;
+
+
+  font-weight: 400;
+}
+
+.shi-tu1{
+  background: url("http://suo.im/6ptGEc") center center no-repeat;
+  position: relative;
+}
+
+.shi-tu2{
+  background: url("http://suo.im/5HOqWa") center center no-repeat;
+  position: relative;
+}
+
+.shi-tu3{
+  background: url("http://suo.im/6hXrFh") center center no-repeat;
+}
+
+.shi-back{
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 170rpx;
+  left: 15rpx;
+  background: #fff;
+}
+
+.shi-next{
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 170rpx;
+  right: 15rpx;
+  background: #eee;
+}
+
+.shi-title{
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  font-size: small;
+}
+/*zz分割线*/

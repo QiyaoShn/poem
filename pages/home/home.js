@@ -1,3 +1,4 @@
+const jinrishici = require('../../utils/jinrishici.js')
 // pages/in/in.js
 Page({
 
@@ -8,11 +9,53 @@ Page({
 
   },
 
+  content(event){
+    var frist = event.currentTarget.dataset.shiCi
+     console.log(frist);
+    this.setData({
+      frist: frist - 1
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
 
+    
+    wx.request({
+      url: 'https://api.nextrt.com/V1/Gushi/',
+
+      success: function(res){
+        console.log(res.data)
+
+        if(res.statusCode==200){
+          that.setData({
+            gushi: res.data
+          })
+          
+          wx.setNavigationBarTitle({
+            title: "每日诗词"
+          })
+  
+          wx.hideNavigationBarLoading({
+            complete: (res) => {},
+          })
+        }
+        else if(res.statusCode==404){
+          console.log("获取失败404")
+        }
+        
+      }
+    })
+    wx.showNavigationBarLoading()
+
+    jinrishici.load(result => {
+      // 下面是处理逻辑示例
+      console.log(result)
+      this.setData({"shici": result.data})
+    })
   },
 
   /**
