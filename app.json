@@ -3,13 +3,54 @@
     "pages/home/home",
     "pages/home/day/day",
     "pages/home/content/content",
-    "pages/home/content/detail/detail"
-    
+    "pages/home/content/detail/detail",
+    "pages/find/find",
+    "pages/data/data",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs"
   ],
-  "window": {
-    "navigationBarBackgroundColor": "#46AEF0",
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "背古诗助手"
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTitleText": "背古诗助手",
+    "navigationBarTextStyle":"white"
   },
-  "sitemapLocation": "sitemap36.json"
+
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath":"image/home-d.jpg",
+        "selectedIconPath":"image/home-s.jpg"
+      },
+      {
+        "pagePath":"pages/find/find",
+        "text":"发现",
+        "iconPath":"image/find-d.jpg",
+        "selectedIconPath":"image/find-s.jpg"
+      },
+      {
+        "pagePath":"pages/data/data",
+        "text":"数据统计",
+        "iconPath":"image/data-s.jpg",
+        "selectedIconPath":"image/data-d.jpg"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"我的",
+        "iconPath":"image/my-d.jpg",
+        "selectedIconPath":"image/my-s.jpg"
+      }
+    ],
+    "color":"#000",
+    "selectedColor":"#FFA500",
+    "backgroundColor":"#fff"
+  },
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
