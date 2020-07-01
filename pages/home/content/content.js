@@ -33,7 +33,7 @@ Page({
       dynasty: "[初唐]",
       id: 4,
       isrecite: false
-   },
+   }
     ]
   },
 

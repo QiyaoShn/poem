@@ -26,6 +26,8 @@
 
 .icon-wancheng-copy:before {
   content: "\e7fb";
+  font-size: 24px;
+  color: #06C358;
 }
 
 .icon-fanhui-copy:before {
@@ -42,10 +44,6 @@
 
 .icon-video:before {
   content: "\e634";
-}
-
-.icon-changtiao:before {
-  content: "\e667";
 }
 
 .icon-shoucang:before {
@@ -70,6 +68,8 @@
 
 .icon-weiwancheng:before {
   content: "\e606";
+  color: #BBBBBB;
+  font-size: 24px;
 }
 
 .icon-luyin:before {

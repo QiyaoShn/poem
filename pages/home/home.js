@@ -9,28 +9,34 @@ Page({
     list:[
       {
         listName:"小学古诗",
-        listId:1,
-        listExample:"静夜思"
+        listCode:"xiaoxue",
+        listExample:"静夜思",
+        listImage:"/images/changtiao.png"
       },{
         listName:"小学古文",
-        listId:2,
-        listExample:"揠苗助长"
+        listCode:"xiaoxue1",
+        listExample:"揠苗助长",
+        listImage:"/images/changtiao1.png"
       },{
         listName:"初中古诗",
-        listId:3,
-        listExample:"明月几时有"
+        listCode:"chuzhong",
+        listExample:"明月几时有",
+        listImage:"/images/changtiao2.png"
       },{
         listName:"初中古文",
-        listId:4,
-        listExample:"湖心亭看雪"
+        listCode:"chuzhong1",
+        listExample:"湖心亭看雪",
+        listImage:"/images/changtiao.png"
       },{
         listName:"高中古诗",
-        listId:5,
-        listExample:"鱼我所欲也"
+        listCode:"gaozhong",
+        listExample:"鱼我所欲也",
+        listImage:"/images/changtiao.png"
       },{
         listName:"高中古文",
-        listId:6,
-        listExample:"孔雀东南飞"
+        listCode:"gaozhong1",
+        listExample:"孔雀东南飞",
+        listImage:"/images/changtiao.png"
       },
     ]
   },

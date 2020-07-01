@@ -29,5 +29,16 @@
     <navigator class='iconfont .icon-sousuo kuaijie-every' url="/pages/home/find/find"><text class="kuaijie-word">搜索</text></navigator>
 </view>
 <!--分割线，方便修改-->
+<view class="item-position">
+	<view class="item-style" wx:for="{{list}}" wx:for-item="lists" data-code="{{lists.listCode}}" data-type="lists" wx:key="listCode" >
+		<view class="item-barStyle" ></view>
+		<view class="item-body">
+			<view class="item-word1">{{lists.listName}}</view>
+			<text class="item-word2">{{lists.listExample}}</text>
+		</view>
+	</view>
+</view>
+
+			
   
 
