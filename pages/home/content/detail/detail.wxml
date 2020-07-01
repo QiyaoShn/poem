@@ -1,0 +1,2 @@
+<!--pages/home/content/detail/detail.wxml-->
+<text>This poem's id is【{{detail_id}}】,详情页待开发~</text>

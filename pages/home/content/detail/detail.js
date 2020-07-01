@@ -1,4 +1,4 @@
-// pages/in/in.js
+// pages/home/content/detail/detail.js
 Page({
 
   /**
@@ -12,7 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      detail_id: options.id
+    })
   },
 
   /**

@@ -1,3 +1,33 @@
-<!--pages/home/home.wxml-->
 
+<!--pages/home/home.wxml-->
+<!--第一部分zz编辑-->
+<view>
+	<swiper style="height: 30vh;" indicator-dots="{{true}}" current="{{frist}}">
+		<swiper-item class="shi-tu1">
+			<text class="shi-title">每日一诗</text>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
+			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="2" catchtap="content"></image>
+		</swiper-item>
+		<swiper-item class="shi-tu2">
+			<text class="shi-title">每日一诗</text>
+      <navigator class="shi-ju" url="/pages/home/day/day"> {{shici.origin.title}}</navigator>
+			<image  class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="{{frist}}" catchtap="content"></image>
+			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="3" catchtap="content"></image>
+		</swiper-item>
+		<swiper-item class="shi-tu3">
+			<text class="shi-title">每日一诗</text>
+      <navigator class="shi-ju" url="/pages/home/day/day"> {{gushi.data.subject}}</navigator>
+			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="2" catchtap="content"></image>
+		</swiper-item>
+
+	</swiper>
+</view>
+<!--分割线，方便修改-->
+<view class="kuaijie-position">
+    <navigator class='iconfont .icon-fenlei kuaijie-every' url="/pages/home/class/class"><text class="kuaijie-word">分类</text></navigator>
+    <navigator class='iconfont .icon-paihangbang kuaijie-every' url="/pages/home/paihangb/paihangb"><text class="kuaijie-word">排行榜</text></navigator>
+    <navigator class='iconfont .icon-sousuo kuaijie-every' url="/pages/home/find/find"><text class="kuaijie-word">搜索</text></navigator>
+</view>
+<!--分割线，方便修改-->
+  
 

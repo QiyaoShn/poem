@@ -1,0 +1,15 @@
+.every{
+  position: relative;
+}
+
+.canvas{
+  border-bottom: 1px #dcdcdc solid;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.recite{
+  position: absolute;
+  left: 680rpx;
+  top: 8rpx;
+}

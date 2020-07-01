@@ -3,7 +3,13 @@
     "pages/home/home",
     "pages/index/index",
     "pages/about/about",
-    "pages/data/data"
+    "pages/data/data",
+    "pages/home/day/day",
+    "pages/home/content/content",
+    "pages/home/content/detail/detail",
+    "pages/home/paihangb/paihangb",
+    "pages/home/find/find",
+    "pages/home/class/class"
   ],
   
   "window": {
