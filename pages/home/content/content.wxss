@@ -1,0 +1,5 @@
+.canvas{
+  border-bottom: 1px #dcdcdc solid;
+  font-size: 14px;
+  font-weight: 300;
+}

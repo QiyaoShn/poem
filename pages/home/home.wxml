@@ -21,3 +21,4 @@
 	</swiper>
 </view>
 <!--分割线，方便修改-->
+<navigator url="/pages/home/content/content">目录页</navigator>

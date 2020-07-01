@@ -1,0 +1,9 @@
+<view>
+	<view wx:for="{{catalog}}" wx:key="id" data-shi-id="{{item.id}}" bindtap="todetail">
+		<view style="font-size:18px; font-weight:500; margin: 10rpx 15rpx">{{item.title}}</view>
+		<view class="canvas">
+			<text style="margin: 5rpx 15rpx;">{{item.dynasty}}</text>
+			<text>{{item.author}}</text>
+		</view>
+	</view>
+</view>

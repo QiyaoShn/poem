@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/home/day/day"
+    "pages/home/day/day",
+    "pages/home/content/content",
+    "pages/home/content/detail/detail"
     
   ],
   "window": {
