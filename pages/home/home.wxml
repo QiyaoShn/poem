@@ -1,6 +1,6 @@
 <!--第一部分zz编辑-->
 <view>
-	<swiper style="height: 30vh;" indicator-dots="{{true}}" current="{{frist}}">
+	<swiper style="height: 30vh;" indicator-dots="{{false}}" current="{{frist}}">
 		<swiper-item class="shi-tu1">
 			<text class="shi-title">每日一诗</text>
 			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
@@ -8,13 +8,13 @@
 		</swiper-item>
 		<swiper-item class="shi-tu2">
 			<text class="shi-title">每日一诗</text>
-      <navigator class="shi-ju" url="/pages/home/day/day"> {{shici.origin.title}}</navigator>
+      <navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
 			<image class="shi-back" src="/images/back.png" data-shi-ci="{{frist}}" catchtap="content"></image>
 			<image class="shi-next" src="/images/next.png" data-shi-ci="3" catchtap="content"></image>
 		</swiper-item>
 		<swiper-item class="shi-tu3">
 			<text class="shi-title">每日一诗</text>
-      <navigator class="shi-ju" url="/pages/home/day/day"> {{gushi.data.subject}}</navigator>
+      <navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
 			<image class="shi-back" src="/images/back.png" data-shi-ci="2" catchtap="content"></image>
 		</swiper-item>
 

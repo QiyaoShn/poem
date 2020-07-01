@@ -15,6 +15,11 @@ Page({
     this.setData({
       frist: frist - 1
     })
+    jinrishici.load(result => {
+      // 下面是处理逻辑示例
+      console.log(result)
+      this.setData({"shici": result.data})
+    })
   },
 
   /**
