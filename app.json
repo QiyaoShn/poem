@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/home/home"
-    
+    "pages/home/home",
+    "pages/index/index",
+    "pages/about/about",
+    "pages/data/data"
   ],
+  
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",
     "navigationBarTextStyle": "white",
