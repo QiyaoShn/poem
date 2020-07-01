@@ -10,25 +10,29 @@ Page({
           title: "静夜思",
           author: "李白",
           dynasty: "[唐]",
-          id: 1
+          id: 1,
+          isRecite: true
       },
       {
         title: "咏鹅",
         author: "骆宾王",
         dynasty: "[初唐]",
-        id: 2
+        id: 2,
+        isRecite: true
      },
     {
       title: "静夜思",
       author: "李白",
       dynasty: "[唐]",
-      id: 3
+      id: 3,
+      isrecite: false
     },
     {
       title: "咏鹅",
       author: "骆宾王",
       dynasty: "[初唐]",
-      id: 4
+      id: 4,
+      isrecite: false
    },
     ]
   },

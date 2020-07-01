@@ -1,9 +1,13 @@
 <view>
-	<view wx:for="{{catalog}}" wx:key="id" data-shi-id="{{item.id}}" bindtap="todetail">
+	<view wx:for="{{catalog}}" wx:key="id" data-shi-id="{{item.id}}" bindtap="todetail" class="every">
 		<view style="font-size:18px; font-weight:500; margin: 10rpx 15rpx">{{item.title}}</view>
 		<view class="canvas">
 			<text style="margin: 5rpx 15rpx;">{{item.dynasty}}</text>
 			<text>{{item.author}}</text>
+		</view>
+		<view class="recite">
+			<image wx:if="{{item.isRecite}}" style="  width: 32rpx; height: 32rpx;" src="/images/recited.png"></image>
+			<image wx:else style="  width: 32rpx; height: 32rpx;"  src="/images/norecite.png"></image>
 		</view>
 	</view>
 </view>
