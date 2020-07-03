@@ -53,8 +53,9 @@
     }
 
   ],
-  "color": "#13d165",
-  "selectedColor":"#00f"
+  "backgroundColor": "#46AEF0",
+  "color": "#F5F9F8",
+  "selectedColor":"#403D3D"
   
   }
 

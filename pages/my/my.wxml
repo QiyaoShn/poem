@@ -1,66 +1,27 @@
-<view class="top">
-<image src="/images/1593647668(1).jpg" class="tx"></image>
-
-<view class="wz">
-<text class="adc">微信名 : </text>
-<text class="abc">年级 : </text>
-</view>
-<view class="ztt" style="width:70px;height:28px;color:#1ee474;border:2px solid;border-radius:8px;">
-<view class="zta" style="background-color:whilte;position:absolute ;">立即登录
-</view>
-</view>
-</view>
-<view class="line" ></view>
+<view class="top"> 
+	<view class="wz"></view>
+  <button type="primary" plain="faulse" class="signIn" >立即登录</button>
+</view> 
+  <view class="line"></view> 
 
 <view class="nj">
-
-<image class="pt" src="/images/1b1b0b2ca8a3a30f72e7cac159a79ce.png"></image>
-<text class="wd">我的年级</text>
-<view class="zzt" style="width:70px;height:28px;background-color:#F9E597;color:#EEDD9B;border:2px solid;border-radius:5px;">
-<view class="zza" style="background-color:whilte;position:absolute ;">未设置
-</view>
-</view>
-<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
-
+  <image class="pt iconfont.icon-nianji"></image>
+  <text class="wd">我的年级</text>
+  <navigator url="../my/myclass/myclass" class="nj">
+    <view class="zza">未设置</view>
+    <image class="pt2 iconfont.icon-jiantou"></image></navigator>
 </view>
 
+<view class="nj">
+  <image class="pt iconfont .icon-video"></image>
+  <text class="wd">我的视频作品</text>
+  <navigator url="../my/myclass/myclass" class="nj"><view class="zza">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
+  </view>
 
-
-<view class="nj1">
-
-<image class="pt3" src="/images/6fb5df50a1eeaff7025a87b6adbfa55.png"></image>
-<text class="wd1">我的视频作品</text>
-<view class="zzt1" style="width:70px;height:28px;background-color:#F9E597;color:#EEDD9B;border:2px solid;border-radius:5px;">
-<view class="zza1" style="background-color:whilte;position:absolute ;">0
-</view>
-</view>
-<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
-
+<view class="nj">
+  <image class="pt iconfont .icon-shoucang"></image>
+  <text class="wd">我的收藏</text>
+  <navigator url="../my/myclass/myclass" class="nj"><view class="zza1">0</view><image class="pt3 iconfont .icon-jiantou"></image></navigator>
 </view>
 
-
-
-<view class="nj2">
-
-<image class="pt4" src="/images/c6002f9203379a73bb337e8bfdeebc6.png"></image>
-<text class="wd2">我的收藏</text>
-<view class="zzt2" style="width:70px;height:28px;background-color:#F9E597;color:#EEDD9B;border:2px solid;border-radius:5px;">
-<view class="zza2" style="background-color:whilte;position:absolute ;">0
-</view>
-</view>
-<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
-
-</view>
-
-<view class="nj3">
-
-<image class="pt5" src="/images/10d204e88ff743fd8d25c9f2c92ff30.png"></image>
-<text class="wd3">设置</text>
-<view class="zzt3" style="width:70px;height:28px;background-color:#FFF;color:#FFF;border:2px solid;border-radius:5px;">
-<view class="zza3" style="background-color:whilte;position:absolute ;">
-</view>
-</view>
-<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
-
-</view>
-<button>ok</button>
+<view class="nj"><image class="pt iconfont .icon-shezhi"></image><text class="wd">设置</text><navigator url="../my/myclass/myclass" class="nj"><view class="zza"></view><image class="pt4 iconfont .icon-jiantou"></image></navigator></view>

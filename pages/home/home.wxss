@@ -68,14 +68,14 @@
   align-items: center;
 }
 .kuaijie-word{
-  font-size:14px;
+  font-size:12px;
 }
 .item-style{
   display: flex;
   overflow: hidden;
   align-items: center;
   position: relative;
-  margin-left: 75rpx;
+  margin-left: 65rpx;
   padding: 30rpx;
 }
 .item-barStyle:before {

@@ -22,6 +22,7 @@
 
 .icon-fenlei:before {
   content: "\e654";
+  font-size: 25px;
 }
 
 .icon-wancheng-copy:before {
@@ -44,14 +45,22 @@
 
 .icon-video:before {
   content: "\e634";
+  color: #605D5D; 
+  font-size: 28px;
 }
 
 .icon-shoucang:before {
   content: "\e620";
+  color: #605D5D; 
+  font-size: 24px; 
+  font-weight: 600; 
 }
 
 .icon-shezhi:before {
   content: "\e614";
+  color: #605D5D; 
+  font-size: 24px; 
+  font-weight: 600; 
 }
 
 .icon-jiantou:before {
@@ -60,10 +69,13 @@
 
 .icon-sousuo:before {
   content: "\e653";
+  font-size: 27px; 
 }
 
 .icon-nianji:before {
   content: "\e652";
+  color: #605D5D; 
+  font-size: 24px; 
 }
 
 .icon-weiwancheng:before {
@@ -86,5 +98,6 @@
 
 .icon-paihangbang:before {
   content: "\e64c";
+  font-size: 25px; 
 }
 
