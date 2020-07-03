@@ -1,4 +1,3 @@
-
 <!--pages/home/home.wxml-->
 <!--第一部分zz编辑-->
 <view>
@@ -10,13 +9,13 @@
 		</swiper-item>
 		<swiper-item class="shi-tu2">
 			<text class="shi-title">每日一诗</text>
-      <navigator class="shi-ju" url="/pages/home/day/day"> {{shici.origin.title}}</navigator>
-			<image  class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="{{frist}}" catchtap="content"></image>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.origin.title}}</navigator>
+			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="{{frist}}" catchtap="content"></image>
 			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="3" catchtap="content"></image>
 		</swiper-item>
 		<swiper-item class="shi-tu3">
 			<text class="shi-title">每日一诗</text>
-      <navigator class="shi-ju" url="/pages/home/day/day"> {{gushi.data.subject}}</navigator>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{gushi.data.subject}}</navigator>
 			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="2" catchtap="content"></image>
 		</swiper-item>
 
@@ -24,21 +23,28 @@
 </view>
 <!--分割线，方便修改-->
 <view class="kuaijie-position">
-    <navigator class='iconfont .icon-fenlei kuaijie-every' url="/pages/home/class/class"><text class="kuaijie-word">分类</text></navigator>
-    <navigator class='iconfont .icon-paihangbang kuaijie-every' url="/pages/home/paihangb/paihangb"><text class="kuaijie-word">排行榜</text></navigator>
-    <navigator class='iconfont .icon-sousuo kuaijie-every' url="/pages/home/find/find"><text class="kuaijie-word">搜索</text></navigator>
+	<navigator class='iconfont .icon-fenlei kuaijie-every' url="/pages/home/class/class"><text class="kuaijie-word">分类</text></navigator>
+	<navigator class='iconfont .icon-paihangbang kuaijie-every' url="/pages/home/paihangb/paihangb"><text class="kuaijie-word">排行榜</text></navigator>
+	<navigator class='iconfont .icon-sousuo kuaijie-every' url="/pages/home/find/find"><text class="kuaijie-word">搜索</text></navigator>
 </view>
 <!--分割线，方便修改-->
 <view class="item-position">
-	<view class="item-style" wx:for="{{list}}" wx:for-item="lists" data-code="{{lists.listCode}}" data-type="lists" wx:key="listCode" >
-		<view class="item-barStyle" ></view>
+	<view class="item-style" wx:for="{{listGushi}}" wx:for-item="listGushi" data-code="{{listGushi.listCode}}" data-type="listGushi" wx:key="listCode" bindtap="to_content">
+		<view class="item-barStyle"></view>
 		<view class="item-body">
-			<view class="item-word1">{{lists.listName}}</view>
-			<text class="item-word2">{{lists.listExample}}</text>
+			<view class="item-word1">{{listGushi.listName}}</view>
+			<text class="item-word2">{{listGushi.listExample}}</text>
+		</view>
+	</view>
+</view>
+<view class="item-position">
+	<view class="item-style2" wx:for="{{listGuwen}}" wx:for-item="listGuwen" data-code="{{listGuwen.listCode}}" data-type="listGuwen" wx:key="listCode" bindtap="to_content">
+		<view class="item-barStyle"></view>
+		<view class="item-body">
+			<view class="item-word1">{{listGuwen.listName}}</view>
+			<text class="item-word2">{{listGuwen.listExample}}</text>
 		</view>
 	</view>
 </view>
 
-			
-  
-
+	

@@ -6,31 +6,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
+    listGushi:[
       {
         listName:"小学古诗",
         listCode:"xiaoxue",
         listExample:"静夜思",
-        listImage:"/images/changtiao.png"
       },{
+        listName:"初中古诗",
+        listCode:"chuzhong",
+        listExample:"明月几时有",
+      },{
+        listName:"高中古诗",
+        listCode:"gaozhong",
+        listExample:"鱼我所欲也",
+      },{
+        listName:"课外拓展",
+        listCode:"tuozhan",
+        listExample:"人生若只如初见",
+      }
+    ],
+    listGuwen:[
+      {
         listName:"小学古文",
         listCode:"xiaoxue1",
         listExample:"揠苗助长",
         listImage:"/images/changtiao1.png"
       },{
-        listName:"初中古诗",
-        listCode:"chuzhong",
-        listExample:"明月几时有",
-        listImage:"/images/changtiao2.png"
-      },{
         listName:"初中古文",
         listCode:"chuzhong1",
         listExample:"湖心亭看雪",
-        listImage:"/images/changtiao.png"
-      },{
-        listName:"高中古诗",
-        listCode:"gaozhong",
-        listExample:"鱼我所欲也",
         listImage:"/images/changtiao.png"
       },{
         listName:"高中古文",
@@ -47,6 +51,17 @@ Page({
     this.setData({
       frist: frist - 1
     })
+    jinrishici.load(result => {
+      // 下面是处理逻辑示例
+      console.log(result)
+      this.setData({"shici": result.data})
+    })
+  },
+
+  to_content(){
+      wx.navigateTo({
+        url: '/pages/home/content/content',
+      })
   },
 
   /**

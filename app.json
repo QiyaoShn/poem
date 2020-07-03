@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/my/my",
     "pages/home/home",
     "pages/about/about",
     "pages/data/data",
@@ -46,7 +46,7 @@
       "selectedIconPath": "images/d9649ecf459dca23f5ecdf881b8694d.png"
     },
     {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/my/my",
       "text": "我的",
       "iconPath": "images/032d65187a1c32bed0fd55fd5c7de63.png",
       "selectedIconPath": "images/76987c7c356d86bb503b6e36a66034a.png"

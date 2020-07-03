@@ -74,7 +74,7 @@
   display: flex;
   overflow: hidden;
   align-items: center;
-  position: absolute;
+  position: relative;
   margin-left: 75rpx;
   padding: 30rpx;
 }
@@ -87,7 +87,15 @@
     color: #f3f3f3;
     background-color: #ddd;
   }
-
+  .item-style2{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    margin-left:462rpx;
+    padding: 30rpx;
+    top: -643rpx;
+  }
 
 .item-word1{
   font-size: 15px;
@@ -105,5 +113,5 @@
 }
 .item-position{
   width: 100%;
-	margin-top: 10px;
+  margin-top: 10px;
 }
