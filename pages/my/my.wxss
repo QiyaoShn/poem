@@ -1,28 +1,107 @@
-.signIn {
+.indexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin:50rpx 0;
+}
+.userName{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin:50rpx 0;
+}
+button {
   position: absolute;
   width: 300rpx;
   height: 90rpx;
   top: 90rpx;
   left: 220rpx;
 }
-.top {
-  display: flex;
-  height: 236rpx;
-}
-.wz {
-  display: flex;
-  flex-direction: column;
-}
 .pt {
   position: relative;
+}
+.tx{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px 10px 0px 10px;
+  
+  }
+.top{
+display:flex;
+width: 750px;
+height: 100px;
+}
+.wz{
+  display:flex;
+  flex-direction:column;
+}
+.adc{
+  margin:15px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.abc{
+  margin: 0px 0px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pt{
+
   width: 40px;
   height: 40px;
   margin: 10px;
   
 }
+
 .line {
   background-color: #EEECEC;
   height: 20rpx;
+}
+.line{
+ border-top:solid #88c4f9;
+ height: 20rpx;
+}
+.nj{
+ 
+    display:flex;
+    flex-direction:row;
+    
+}
+.wd{
+  margin: 20px 50px 0px 0px;
+  font-weight: bold;
+}
+.zzt{
+  margin: 15px 0px 0px 102px;
+}
+.zza{
+  color:black ;
+  margin: 4px 0px 0px 12px;
+}
+.pt2{
+  width: 20px;
+  height: 20px;
+  margin: 20px 0px 0px 0px ;
+}
+
+
+.wd1{
+  margin: 20px 50px 0px 0px;
+  font-weight: bold;
+}.zzt1{
+  margin: 15px 0px 0px 70px;
+}
+.zza1{
+  color:black ;
+  margin: 4px 0px 0px 12px;
+
 }
 .nj {
   display: flex;
