@@ -30,7 +30,7 @@ height: 100px;
   font-size: 12px;
   font-weight: bold;
   color:#13d165;
-  margin: 25px  0px 0px 100px;
+  margin: 25px  0px 0px 150px;
 
 }
 .zta{
@@ -52,10 +52,10 @@ height: 100px;
     
 }
 .wd{
-  margin: 20px 0px 0px 0px;
+  margin: 20px 50px 0px 0px;
   font-weight: bold;
 }.zzt{
-  margin: 13px 0px 0px 90px;
+  margin: 15px 0px 0px 102px;
 }
 .zza{
   color:black ;
@@ -69,23 +69,72 @@ height: 100px;
 
 
 .wd1{
-  margin: 20px 0px 0px 0px;
+  margin: 20px 50px 0px 0px;
   font-weight: bold;
 }.zzt1{
-  margin: 13px 0px 0px 90px;
+  margin: 15px 0px 0px 70px;
 }
 .zza1{
   color:black ;
   margin: 4px 0px 0px 12px;
 }
 .pt3{
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 15px 10px 15px 15px;
 }
 .nj1{
  
   display:flex;
-  flex-direction:row;
-  
+  flex-direction:row; 
+}
+
+
+.wd2{
+  margin: 20px 50px 0px 0px;
+  font-weight: bold;
+}.zzt2{
+  margin: 15px 0px 0px 104px;
+}
+.zza2{
+  color:black ;
+  margin: 4px 0px 0px 12px;
+}
+.pt4{
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 10px 8px;
+}
+.nj2{
+ 
+  display:flex;
+  flex-direction:row; 
+}
+
+
+
+.wd3{
+  margin: 20px 50px 0px 0px;
+  font-weight: bold;
+}.zzt3{
+  margin: 15px 0px 0px 136px;
+}
+.zza3{
+  color:black ;
+  margin: 4px 0px 0px 12px;
+}
+.pt5{
+  width: 35px;
+  height: 35px;
+  margin: 10px 10px 10px 12px;
+}
+.nj3{
+ 
+  display:flex;
+  flex-direction:row; 
+}
+.pt9{
+  width: 20px;
+  height: 20px;
+  margin-left: 150px;
 }

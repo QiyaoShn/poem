@@ -24,12 +24,40 @@
 
 </view>
 
+
+
 <view class="nj1">
 
 <image class="pt3" src="/images/6fb5df50a1eeaff7025a87b6adbfa55.png"></image>
 <text class="wd1">我的视频作品</text>
 <view class="zzt1" style="width:70px;height:28px;background-color:#F9E597;color:#EEDD9B;border:2px solid;border-radius:5px;">
 <view class="zza1" style="background-color:whilte;position:absolute ;">0
+</view>
+</view>
+<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
+
+</view>
+
+
+
+<view class="nj2">
+
+<image class="pt4" src="/images/c6002f9203379a73bb337e8bfdeebc6.png"></image>
+<text class="wd2">我的收藏</text>
+<view class="zzt2" style="width:70px;height:28px;background-color:#F9E597;color:#EEDD9B;border:2px solid;border-radius:5px;">
+<view class="zza2" style="background-color:whilte;position:absolute ;">0
+</view>
+</view>
+<image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
+
+</view>
+
+<view class="nj3">
+
+<image class="pt5" src="/images/10d204e88ff743fd8d25c9f2c92ff30.png"></image>
+<text class="wd3">设置</text>
+<view class="zzt3" style="width:70px;height:28px;background-color:#FFF;color:#FFF;border:2px solid;border-radius:5px;">
+<view class="zza3" style="background-color:whilte;position:absolute ;">
 </view>
 </view>
 <image class="pt2" src="/images/3cbe1b89d2eff400ab810b23ef2ca5d.png"></image>
