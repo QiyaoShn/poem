@@ -16,7 +16,7 @@
   margin:10rpx 0;
 
 }
-button {
+.button {
   position: absolute;
   width: 300rpx;
   height: 90rpx;
@@ -42,11 +42,7 @@ height: 100px;
   display:flex;
   flex-direction:column;
 }
-.adc{
-  margin:15px 0px 15px;
-  font-size: 14px;
-  font-weight: bold;
-}
+
 .abc{
   margin: 0px 0px 0px 15px;
   font-size: 14px;
@@ -65,44 +61,14 @@ height: 100px;
   background-color: #EEECEC;
   height: 20rpx;
 }
-.line{
- border-top:solid #88c4f9;
- height: 20rpx;
-}
-.nj{
- 
-    display:flex;
-    flex-direction:row;
-    
-}
-.wd{
-  margin: 20px 50px 0px 0px;
-  font-weight: bold;
-}
+
+
 .zzt{
   margin: 15px 0px 0px 102px;
 }
-.zza{
-  color:black ;
-  margin: 4px 0px 0px 12px;
-}
-.pt2{
-  width: 20px;
-  height: 20px;
-  margin: 20px 0px 0px 0px ;
-}
-
-
 .wd1{
   margin: 20px 50px 0px 0px;
   font-weight: bold;
-}.zzt1{
-  margin: 15px 0px 0px 70px;
-}
-.zza1{
-  color:black ;
-  margin: 4px 0px 0px 12px;
-
 }
 .nj {
   display: flex;
