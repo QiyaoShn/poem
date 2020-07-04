@@ -7,30 +7,30 @@ Page({
   data: {
     catalog: [
       {
-          title: "静夜思",
-          author: "李白",
+          title: "观刈麦",
+          author: "白居易",
           dynasty: "[唐]",
           id: 1,
           isRecite: true
       },
       {
-        title: "咏鹅",
-        author: "骆宾王",
-        dynasty: "[初唐]",
+        title: "夜雨寄北",
+        author: "李商隐",
+        dynasty: "[晚唐]",
         id: 2,
         isRecite: true
      },
     {
-      title: "静夜思",
-      author: "李白",
+      title: "春望",
+      author: "杜甫",
       dynasty: "[唐]",
       id: 3,
       isrecite: false
     },
     {
-      title: "咏鹅",
-      author: "骆宾王",
-      dynasty: "[初唐]",
+      title: "游山西村",
+      author: "陆游",
+      dynasty: "[北宋]",
       id: 4,
       isrecite: false
    }

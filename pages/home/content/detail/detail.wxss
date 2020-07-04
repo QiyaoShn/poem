@@ -1,1 +1,31 @@
-/* pages/home/content/detail/detail.wxss */
+.gushi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 60rpx 30rpx;
+}
+
+.gushi_detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 60rpx 30rpx;
+}
+
+.luyin{
+  width: 128rpx;
+  height: 128rpx;
+  margin-left:  280rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.stop{
+  width: 128rpx;
+  height: 128rpx;
+  margin-left:  100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
