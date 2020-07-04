@@ -53,5 +53,4 @@ handleGetUserInfo(data){
        this.onLoad();
      }
    },
-
 })

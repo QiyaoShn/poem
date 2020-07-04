@@ -28,7 +28,6 @@
   <image class="pt2 iconfont .icon-jiantou"></image></navigator>
 </view>
 
-
 <view class="jj">
   <image class="pt iconfont .icon-shoucang"></image>
   <text class="wd">我的收藏</text>
@@ -37,16 +36,6 @@
   <image class="pt3 iconfont .icon-jiantou"></image>
   </navigator>
 </view>
-
-<view class="nj">
-  <image class="pt iconfont .icon-shezhi"></image>
-    <text class="wd">设置</text>
-    <navigator url="../my/myclass/myclass" class="nj">
-         <view class="zza"></view>
-         <image class="pt4 iconfont .icon-jiantou"></image>
-    </navigator>
-</view>
-
 <view class="jj">
   <image class="pt iconfont .icon-shezhi"></image>
   <text class="wd">设置</text>
