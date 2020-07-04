@@ -9,13 +9,13 @@
 		</swiper-item>
 		<swiper-item class="shi-tu2">
 			<text class="shi-title">每日一诗</text>
-			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.origin.title}}</navigator>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
 			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="{{frist}}" catchtap="content"></image>
 			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="3" catchtap="content"></image>
 		</swiper-item>
 		<swiper-item class="shi-tu3">
 			<text class="shi-title">每日一诗</text>
-			<navigator class="shi-ju" url="/pages/home/day/day"> {{gushi.data.subject}}</navigator>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
 			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="2" catchtap="content"></image>
 		</swiper-item>
 
@@ -46,5 +46,3 @@
 		</view>
 	</view>
 </view>
-
-	
