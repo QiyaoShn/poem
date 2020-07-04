@@ -1,6 +1,7 @@
 <view class="indexContainer"> 
   <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-  <button 
+  <button
+    plain="false"
      type="primary" 
      open-type="getUserInfo" 
      bindgetuserinfo="handleGetUserInfo"
@@ -9,28 +10,34 @@
   </button>
   <text class="userName">hello：{{userInfo.nickName}}</text>
 </view> 
-
 <view class="line"></view> 
 
-<view class="nj">
+<view class="jj">
   <image class="pt iconfont.icon-nianji"></image>
   <text class="wd">我的年级</text>
-  <navigator url="pages/my/myclass/myclass" class="nj">
+  <navigator url="/pages/my/myclass/myclass" class="nj">
     <view class="zza">未设置</view>
-    <image class="pt2 iconfont.icon-jiantou"></image></navigator>
+    <image class="pt1 iconfont.icon-jiantou"></image></navigator>
 </view>
-<view class="nj">
+
+<view class="jj">
   <image class="pt iconfont .icon-video"></image>
   <text class="wd">我的视频作品</text>
-  <navigator url="../my/myclass/myclass" class="nj"><view class="zza">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
-  </view>
+  <navigator url="/pages/my/myclass/myclass" class="nj">
+  <view class="zza">0</view>
+  <image class="pt2 iconfont .icon-jiantou"></image></navigator>
+</view>
 
 
-  <view class="nj">
+<view class="jj">
   <image class="pt iconfont .icon-shoucang"></image>
   <text class="wd">我的收藏</text>
-  <navigator url="../my/myclass/myclass" class="nj"><view class="zza1">0</view><image class="pt3 iconfont .icon-jiantou"></image></navigator>
+  <navigator url="/pages/my/myclass/myclass" class="nj">
+  <view class="zza1">0</view>
+  <image class="pt3 iconfont .icon-jiantou"></image>
+  </navigator>
 </view>
+
 <view class="nj">
   <image class="pt iconfont .icon-shezhi"></image>
     <text class="wd">设置</text>
@@ -40,4 +47,12 @@
     </navigator>
 </view>
 
+<view class="jj">
+  <image class="pt iconfont .icon-shezhi"></image>
+  <text class="wd">设置</text>
+  <navigator url="/pages/my/myclass/myclass" class="nj">
+  <view class="zza"></view>
+  <image class="pt4 iconfont .icon-jiantou " ></image>
+  </navigator>
+</view>
 

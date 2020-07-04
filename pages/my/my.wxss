@@ -14,7 +14,6 @@
   font-size: 32rpx;
   font-weight: bold;
   margin:10rpx 0;
-
 }
 button {
   position: absolute;
@@ -23,6 +22,7 @@ button {
   top: 90rpx;
   left: 220rpx;
 }
+
 .pt {
   position: relative;
 }
@@ -65,6 +65,7 @@ height: 100px;
   background-color: #EEECEC;
   height: 20rpx;
 }
+
 .line{
  border-top:solid #88c4f9;
  height: 20rpx;
@@ -104,7 +105,9 @@ height: 100px;
   margin: 4px 0px 0px 12px;
 
 }
-.nj {
+
+.jj {
+
   display: flex;
   border-bottom: 1px solid #EEECEC;
   margin: 10px 10px;
@@ -117,40 +120,48 @@ height: 100px;
 .zza {
   position: relative;
   color: #605D5D;
-  left: 225rpx;
-  top: 40rpx;
+  left: 250rpx;
+  top: 45rpx;
   font-size: 14px;
 }
 .zza1 {
   position: relative;
   color: #605D5D;
-  left: 280rpx;
-  top: 40rpx;
+  left: 310rpx;
+  top: 45rpx;
   font-size: 14px;
+}
+.pt1{
+  position: relative;
+  width: 40rpx;
+  height: 25px;
+  right: -335rpx;
+  color: #605D5D;
+  font-size: 25px;
 }
 .pt2 {
   position: relative;
-  width: 25px;
+  width: 40rpx;
   height: 25px;
-  right: -230rpx;
-  top: 33rpx;
+  right: -270rpx;
+
   color: #605D5D;
   font-size: 25px;
 }
 .pt3 {
   position: relative;
-  width: 25px;
+  width: 40rpx;
   height: 25px;
-  right: -290rpx;
-  top: 33rpx;
+  right: -330rpx;
+
   color: #605D5D;
   font-size: 25px;
 }
 .pt4 {
   position: relative;
-  width: 25px;
+  width: 40rpx;
   height: 25px;
-  right: -365rpx;
+  right: -385rpx;
   top: 33rpx;
   color: #605D5D;
   font-size: 25px;
