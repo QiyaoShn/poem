@@ -29,8 +29,8 @@
 }
 
 .shi-back{
-  width: 50rpx;
-  height: 50rpx;
+  width: 64rpx;
+  height: 64rpx;
   position: absolute;
   top: 170rpx;
   left: 15rpx;
@@ -38,8 +38,8 @@
 }
 
 .shi-next{
-  width: 50rpx;
-  height: 50rpx;
+  width: 64rpx;
+  height: 64rpx;
   position: absolute;
   top: 170rpx;
   right: 15rpx;

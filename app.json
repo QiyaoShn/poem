@@ -9,7 +9,9 @@
     "pages/home/content/detail/detail",
     "pages/home/paihangb/paihangb",
     "pages/home/find/find",
-    "pages/home/class/class"
+    "pages/home/class/class",
+    "pages/nianji/nianji"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",

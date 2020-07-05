@@ -5,7 +5,6 @@
 	</button>
 	<text class="userName">hello：{{userInfo.nickName}}</text>
 </view> 
-
 <view class="line"></view> 
 
 <view class="nj">
