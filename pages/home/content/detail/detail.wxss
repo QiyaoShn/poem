@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin: 60rpx 30rpx;
+  margin: 60rpx 10rpx ;
 }
 
 .luyin{
@@ -102,7 +102,7 @@
   display: flex;
   height: 200rpx;
   background-color: white;
-  border: 3rpx solid #D2CFCF;
+  border-top: 3rpx solid #D2CFCF;
   box-shadow:2rpx 2rpx 1rpx 4rpx #EEECEC;
   position: fixed;
   left: 0rpx;
@@ -128,7 +128,8 @@
   margin-left: 88rpx;
 }
 .gushi-page{
-  margin-inline: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   background-color: #FBFAF5;
   height: 100%;
   margin-bottom: 300rpx;

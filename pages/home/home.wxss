@@ -94,7 +94,7 @@
     position: relative;
     margin-left:450rpx;
     padding: 30rpx;
-    top: -643rpx;
+    top: -660rpx;
   }
 
 .item-word1{
