@@ -92,7 +92,7 @@
     overflow: hidden;
     align-items: center;
     position: relative;
-    margin-left:462rpx;
+    margin-left:450rpx;
     padding: 30rpx;
     top: -643rpx;
   }

@@ -42,7 +42,24 @@ Page({
         listExample:"孔雀东南飞",
         listImage:"/images/changtiao.png"
       },
-    ]
+    ],
+    kuaijie:[{
+      codes:"fenlei",
+      name:"分类",
+      image:"iconfont .icon-fenlei kuaijie-every",
+      urlTo:"/pages/home/class/class"
+    },{
+      codes:"paihangbang",
+      name:"排行榜",
+      image:"iconfont .icon-paihangbang kuaijie-every",
+      urlTo:"/pages/home/paihangb/paihangb"
+    },{
+      codes:"sousuo",
+      name:"搜索",
+      image:"iconfont .icon-sousuo kuaijie-every",
+      urlTo:"/pages/home/find/find"
+    }
+  ]
   },
 
   content(event){

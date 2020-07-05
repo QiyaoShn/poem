@@ -22,26 +22,26 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "images/08741d45c0035c2873ea3efcc207a7a.png",
-        "selectedIconPath": "images/76f08dffcb4b71f03099c39bf9a2dd0.png"
+        "iconPath": "images/shouye1.png",
+        "selectedIconPath": "images/shouye2.png"
       },
       {
-        "pagePath": "pages/home/find/find",
+        "pagePath": "pages/about/about",
         "text": "发现",
-        "iconPath": "images/d38a8a7a8061e9913399f1d28ddac3c.png",
-        "selectedIconPath": "images/0618e6727920eaf60d31a09e21ed09e.png"
+        "iconPath": "images/faxian1.png",
+        "selectedIconPath": "images/faxian2.png"
       },
       {
         "pagePath": "pages/data/data",
         "text": "数据统计",
-        "iconPath": "images/6f95d0161f8c1f4c9317672cc0d79f7.png",
-        "selectedIconPath": "images/d9649ecf459dca23f5ecdf881b8694d.png"
+        "iconPath": "images/shuju1.png",
+        "selectedIconPath": "images/shuju2.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/032d65187a1c32bed0fd55fd5c7de63.png",
-        "selectedIconPath": "images/76987c7c356d86bb503b6e36a66034a.png"
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png"
       }
     ],
     "backgroundColor": "#46AEF0",

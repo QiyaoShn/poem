@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+      isChecked1: true,
+      isChecked2:true,
+      isChecked3:true,
       subject: [
         {
           ID: 1,
@@ -24,12 +27,14 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      detail_id: options.id
+      detail_id: options.id,
     })
   },
 
-
   begin(){
+    this.setData({
+      isChecked1: false
+    })
     const options = {
       duration: 10000,//指定录音的时长，单位 ms
       sampleRate: 16000,//采样率
@@ -55,14 +60,21 @@ Page({
 
   //停止录音
   stop: function () {
+    this.setData({
+      isChecked2:false,
+      isChecked1:true
+    })
     wx.getRecorderManager().stop();
+    this.setData({
+      isChecked2:true
+    })  
     wx.getRecorderManager().onStop((res) => {
       console.log('停止录音')
       wx.showToast({
         title: '上传中',
         icon: "loading",
         duration: 3000
-      })   
+      }) 
     })
   },
 
