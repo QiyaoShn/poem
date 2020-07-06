@@ -4,9 +4,40 @@ Page({
   data:{
     inputShow:true,
     searchValue:'',
+
+    catalog: [
+      {
+          title: "观刈麦",
+          author: "白居易",
+          dynasty: "[唐]",
+          id: 1,
+          isRecite: true
+      },
+      {
+        title: "夜雨寄北",
+        author: "李商隐",
+        dynasty: "[晚唐]",
+        id: 2,
+        isRecite: true
+     },
+    {
+      title: "春望",
+      author: "杜甫",
+      dynasty: "[唐]",
+      id: 3,
+      isrecite: false
+    },
+    {
+      title: "游山西村",
+      author: "陆游",
+      dynasty: "[北宋]",
+      id: 4,
+      isrecite: false
+   }
+    ]
   },
   onLoad: function(e){
-  
+    
   },
   searchValueInput:function(e){
     var value=e.detail.value;
@@ -15,11 +46,11 @@ Page({
     })
     console.log(searchValue);
   },
-  sousuoId:function(e){
-    var ID=event.currentTarget.dataset.ID
-    console.log(ID)
+  sousuoId:function(event){
+    var shiId = event.currentTarget.dataset.shiId
+     console.log(shiId);
     wx.navigateTo({
-      url: '/pages/home/content/detail/detail',
+      url: '/pages/home/content/detail/detail?id=' + shiId,
     })
   }
   
