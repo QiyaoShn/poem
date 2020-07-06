@@ -31,7 +31,7 @@ page{
 .sousuokuang{
   display: flex;
   position: relative;
-  padding: 10px 110px;
+  padding: 10px 160px;
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
   background-color: #ffffff;
@@ -47,6 +47,6 @@ page{
   padding: 35rpx;
 }
 .sousuoInfo{
-  position: relative;
-  left: 10rpx;
+  left: 50px;
+  position: absolute;
 }
