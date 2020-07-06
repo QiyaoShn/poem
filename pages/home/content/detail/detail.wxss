@@ -28,19 +28,6 @@
   border-radius: 50%;
   border-width: 1rpx;
 }
-.luyinChange{
-  width: 106rpx;
-  height: 106rpx;
-  margin-left:  184rpx;
-  margin-top: 30rpx;
-  margin-bottom: 40rpx;
-  font-size: 100rpx;
-  background-color: #ffffff;
-  color: #FBED19;
-  box-shadow:0rpx 0rpx 1rpx 1rpx  #BBBBBB inset;
-  border-radius: 50%;
-  border-width: 2rpx;
-}
 .bofang{
   width: 90rpx;
   height: 90rpx;

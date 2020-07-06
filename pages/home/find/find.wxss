@@ -1,0 +1,52 @@
+page{
+  background-color: #f2f2f2;
+}
+.sousuo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:30px ;
+  
+}
+.sousuo-icon1{
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  color: gray;
+  left: 20rpx;
+ 
+}
+.sousuo-icon2{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: gray;
+  right: 20rpx;
+ 
+}
+.sousuokuang{
+  display: flex;
+  position: relative;
+  padding: 10px 110px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  align-items: center;
+  height: 46px;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 2px  2px 0.5px 0.5px #B0ADAD;
+}
+.sousuo-word{
+  font-size: 14px;
+  color: gray;
+  padding: 35rpx;
+}
+.sousuoInfo{
+  position: relative;
+  left: 10rpx;
+}

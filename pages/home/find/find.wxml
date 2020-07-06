@@ -1,1 +1,11 @@
-<text>待开发~</text>
+<form>
+  <view class="sousuo">
+    <view class="sousuokuang">
+      <image class="iconfont .icon-sousuokuang sousuo-icon1" bindtap="sousuoId"></image>
+      <image class="iconfont .icon-sousuokuangshanchu sousuo-icon2"></image>
+      <input type="text" value="{{searchValue}}" placeholder="请输入..." bindinput="{{searchValueInput}}" class="sousuoInfo" ></input>
+    </view>
+    <text class="sousuo-word">请输入您要搜索的古诗名称或诗人名字</text>
+    
+  </view>
+</form>

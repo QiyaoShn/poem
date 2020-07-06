@@ -15,14 +15,13 @@
   font-weight: bold;
   margin:10rpx 0;
 }
-.button {
+button {
   position: absolute;
   width: 300rpx;
   height: 90rpx;
   top: 90rpx;
   left: 220rpx;
 }
-
 .wz {
   display: flex;
   flex-direction: column;
@@ -66,19 +65,7 @@ height: 100px;
   background-color: #EEECEC;
   height: 20rpx;
 }
-
-
-.zzt{
-  margin: 15px 0px 0px 102px;
-}
-.wd1{
-  margin: 20px 50px 0px 0px;
-  font-weight: bold;
-}
-
-
 .jj {
-
   display: flex;
   border-bottom: 1px solid #EEECEC;
   margin: 10px 10px;

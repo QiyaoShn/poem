@@ -1,6 +1,6 @@
 <!--pages/home/content/detail/detail.wxml-->
 <view wx:for="{{subject}}" wx:key="ID" class="gushi-page">
-	<view wx:if="{{item.ID == detail_id}}" class="gushi" bindtap="">
+	<view wx:if="{{item.ID == detail_id}}" class="gushi">
 		<text>{{item.title}}</text>
 		<text style="margin: 10rpx 0;">{{item.author}}</text>
 		<text style="margin-top: 20rpx;">{{item.content}}</text>
@@ -15,16 +15,16 @@
 	</view>
 	<view class="button-position">
 		<view class="button-style">
-			<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="stop" ></image><text class="button-word2">背诵结束</text>
+			<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="stop"></image><text class="button-word2">背诵结束</text>
 		</view>
 		<view wx:if="{{rec}}" class="button-style">
-			<image catchtap="begin" class="{{isChecked1? 'luyin iconfont .icon-luyin':'luyinChange iconfont .icon-luyin'}}"></image><text class="button-word1">开始背诵</text>
+			<image catchtap="begin" class="luyin iconfont .icon-luyin"></image><text class="button-word1">开始背诵</text>
 		</view>
 		<view wx:else class="button-style">
 			<image src="/images/recording.gif" class="luyin" catchtap="stop"></image>
 			<text class="button-word1">录音中...</text>
 		</view>
 		<view class="button-style">
-			<image catchtap="" class="{{isChecked3? 'bofang iconfont .icon-bofang':'bofangChange iconfont .icon-bofang'}}"></image><text class="button-word3">我的录音</text>
+			<image catchtap="bofang" class="{{isChecked3? 'bofang iconfont .icon-bofang':'bofangChange iconfont .icon-bofang'}}"></image><text class="button-word3">我的录音</text>
 		</view>
 	</view>
