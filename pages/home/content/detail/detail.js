@@ -31,14 +31,58 @@ Page({
       rec: true
   },
 
+  notfound(){
+    console.log("404")
+    wx.showModal({
+      title:"未找到该诗的详情！",
+      content:'“数据库有限，未查找到这首诗;\n请等待接入API或更新！\n”',
+      confirmText: "好的",
+      cancelText: "取消",
+      success (res) {
+        if (res.confirm) {
+        wx.navigateBack({
+          complete: (res) => {},
+        })
+        } else if (res.cancel) {
+          wx.showModal({
+            showCancel: false,
+            title:"康康其他的诗词吧！",
+            content:'前往目录页查看 (套娃)',
+            confirmText: "let's go",
+            success (res) {
+              if (res.confirm) {
+              wx.navigateBack({
+                complete: (res) => {},
+              })
+              } else if (res.cancel) {
+              console.log('用户点击否')
+              }
+            }
+          })
+        }
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   
   onLoad: function (options) {
-    this.setData({
-      detail_id: options.id,
-    })
+    for (let i = 0; i < this.data.subject.length; ++i) {
+        if(this.data.subject[i].ID == options.id)
+        {
+          console.log("yes")
+          this.setData({
+            detail_id: options.id
+          })
+          return
+        }
+        this.setData({
+          times: i
+        })
+    }
+      
   },
 
   begin(){
