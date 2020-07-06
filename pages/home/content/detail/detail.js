@@ -69,6 +69,10 @@ Page({
    */
   
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: "ID: "+options.id + " 详情"
+    })
+
     for (let i = 0; i < this.data.subject.length; ++i) {
         if(this.data.subject[i].ID == options.id)
         {
