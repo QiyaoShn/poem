@@ -2,7 +2,7 @@
 <view wx:if="{{times != subject.length-1}}">
 	<view wx:for="{{subject}}" wx:key="ID">
 		<view wx:if="{{item.ID == detail_id}}" class="gushi-page">
-			<view class="gushi">
+			<view class="gushi {{showTrue?'isShow':'isHide'}}">
 				<text>{{item.title}}</text>
 				<text style="margin: 10rpx 0;">{{item.author}}</text>
 				<text style="margin-top: 20rpx;">{{item.content}}</text>

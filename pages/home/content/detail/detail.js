@@ -7,6 +7,7 @@ Page({
   data: {
       isChecked2:true,
       isChecked3:true,
+      showTrue:true,
       subject: [
         {
           ID: 1,
@@ -69,10 +70,9 @@ Page({
    */
   
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: "ID: "+options.id + " 详情"
-    })
-
+    wx.setNavigationBarTitle({ 
+      title: "ID: "+options.id + " 详情" 
+    }) 
     for (let i = 0; i < this.data.subject.length; ++i) {
         if(this.data.subject[i].ID == options.id)
         {
@@ -88,9 +88,12 @@ Page({
     }
       
   },
-
+  
   begin(){
     var that=this;
+    that.setData({
+      showTrue:false,
+    })
     wx.showModal({
       showCancel: false,
       title:"录音已开始",
@@ -129,14 +132,15 @@ Page({
   //停止录音
   stop: function () {
     var that=this;
-    this.setData({
-      isChecked2:false
+    that.setData({
+      isChecked2:false,
+      showTrue:true
     })
     wx.getRecorderManager().stop();
-    this.setData({
+    that.setData({
       isChecked2:true
     })  
-    wx.getRecorderManager().onStop((res) => {
+    wx.getRecorderManager().onStop(function(res){
       console.log('停止录音')
       wx.showToast({
         title: '上传中',
@@ -151,11 +155,13 @@ Page({
   },
   //播放录音
   bofang:function(){
+    var that = this;
+    var src=this.data.src;
     if (src == '') {
-      this.tip("请先录音！")
+      that.tip("请先录音！")
       return;
     }
-    wx.createInnerAudioContext().src=that.data.src;
+    wx.createInnerAudioContext().src=src;
     wx.createInnerAudioContext().play();
     console.log('播放录音')
     //播放录音错误回调
