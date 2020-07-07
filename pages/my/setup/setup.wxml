@@ -1,0 +1,33 @@
+<!--pages/my/setup/setup.wxml-->
+<view class="sz" >
+<view class="line">个人资料</view>
+<navigator url="/pages/my/setup/ziliao/ziliao" hover-class="none">
+<image  class="jt iconfont .icon-jiantou"></image>
+</navigator>
+</view>
+
+    <view class="weui-cell__ft">
+    <view class="weui-cell__bd">夜间模式</view>
+    <switch class="yj" checked="{{indicatorDots}}" bindchange="changeIndicatorDots" />
+    </view>
+
+
+
+
+  <view class="sz" >
+<view class="line">关于我们</view>
+<navigator hover-class="none" url="/pages/my/setup/weare/weare">
+<image  class="jt iconfont .icon-jiantou"></image>
+</navigator>
+</view>
+
+
+  <view class="sz" >
+<view class="line">信息反馈</view>
+<navigator hover-class="none" url="/pages/my/setup/fankui/fankui">
+<image  class="jt iconfont .icon-jiantou"></image>
+</navigator>
+</view>
+
+
+<button class="buttoner">退出当前账号</button>

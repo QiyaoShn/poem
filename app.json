@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/my/setup/setup",
     "pages/my/my",
     "pages/about/about",
     "pages/data/data",
@@ -10,7 +11,11 @@
     "pages/home/paihangb/paihangb",
     "pages/home/find/find",
     "pages/home/class/class",
-    "pages/nianji/nianji"
+    "pages/my/vedio/vedio",
+    "pages/my/star/star",
+    "pages/my/setup/weare/weare",
+    "pages/my/setup/ziliao/ziliao",
+    "pages/my/setup/fankui/fankui"
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",

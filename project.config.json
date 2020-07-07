@@ -91,12 +91,6 @@
 					"pathName": "pages/home/content/detail/detail",
 					"query": "",
 					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/find/find",
-					"pathName": "pages/home/find/find",
-					"scene": null
 				}
 			]
 		}

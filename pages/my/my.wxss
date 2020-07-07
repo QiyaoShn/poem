@@ -30,27 +30,9 @@ button {
 .pt {
   position: relative;
 }
-.tx{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    margin: 10px 10px 0px 10px;
-  
-  }
-.top{
-display:flex;
-width: 750px;
-height: 100px;
-}
 .wz{
   display:flex;
   flex-direction:column;
-}
-
-.abc{
-  margin: 0px 0px 0px 15px;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .pt{
@@ -75,7 +57,15 @@ height: 100px;
   font-size: 15px;
   color: #605D5D;
 }
-.zza {
+.picker{
+  position: relative;
+  color: #605D5D;
+  left: 230rpx;
+  top: 45rpx;
+  font-size: 16px;
+
+}
+.zza2{
   position: relative;
   color: #605D5D;
   left: 250rpx;
@@ -123,4 +113,7 @@ height: 100px;
   top: 33rpx;
   color: #605D5D;
   font-size: 25px;
+}
+.nj{
+  position:relative;
 }

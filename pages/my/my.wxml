@@ -8,30 +8,37 @@
      style='display:{{isShow?"block": "none"}}'>
      立即登录
   </button>
-  <text hidden="{{isShow ? true:false}}" class="userName">hello：{{userInfo.nickName}}</text>
+  <text hidden="{{isShow ? true:false}}" class="userName">Hello：{{userInfo.nickName}}</text>
 </view> 
-
 <view class="line"></view> 
+
+
 
 <view class="jj">
   <image class="pt iconfont.icon-nianji"></image>
   <text class="wd">我的年级</text>
-  <navigator url="/pages/my/myclass/myclass" class="nj" hover-class="none">
-    <view class="zza">未设置</view>
-    <image class="pt1 iconfont.icon-jiantou"></image></navigator>
+  <view  class="nj" hover-class="none">
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+     {{multiArray[1][multiIndex[1]]}}
+    </view>
+
+    <image class="pt1 iconfont.icon-jiantou"></image>
+      </picker>
+      </view>
 </view>
 
 
 <view class="jj">
   <image class="pt iconfont .icon-video"></image>
   <text class="wd">我的视频作品</text>
-  <navigator url="/pages/my/myclass/myclass" class="nj" hover-class="none"><view class="zza">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
+  <navigator url="/pages/my/vedio/vedio" class="nj" hover-class="none"><view class="zza2">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
   </view>
 
 <view class="jj">
   <image class="pt iconfont .icon-shoucang"></image>
   <text class="wd">我的收藏</text>
-  <navigator url="/pages/my/myclass/myclass" class="nj" hover-class="none">
+  <navigator url="/pages/my/star/star" class="nj" hover-class="none">
   <view class="zza1">0</view>
   <image class="pt3 iconfont .icon-jiantou"></image>
   </navigator>
@@ -40,7 +47,7 @@
 <view class="jj">
 <image class="pt iconfont .icon-shezhi"></image>
 <text class="wd">设置</text>
-<navigator url="/pages/my/myclass/myclass" class="nj" hover-class="none"><view class="zza"></view>
+<navigator url="/pages/my/setup/setup" class="nj" hover-class="none"><view class="zza"></view>
 <image class="pt4 iconfont .icon-jiantou " ></image>
 </navigator>
 </view>
