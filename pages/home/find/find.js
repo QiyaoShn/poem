@@ -52,6 +52,14 @@ Page({
     wx.navigateTo({
       url: '/pages/home/content/detail/detail?id=' + shiId,
     })
-  }
+  },
+
+  sousuo:function(event){
+    var shiId = event.currentTarget.dataset.shiId
+     console.log(shiId);
+    wx.navigateTo({
+      url: '/pages/home/content/detail/detail?id=' + shiId,
+    })
+  },
   
 })
