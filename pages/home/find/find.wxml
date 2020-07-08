@@ -11,5 +11,5 @@
 </form>
 <view>推荐:</view>
 <view wx:for="{{catalog}}" wx:key="id">
-  <view>{{item.title}}: {{item.id}}</view>
+  <view>{{item.title}}</view>
 </view>
