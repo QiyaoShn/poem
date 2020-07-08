@@ -1,7 +1,7 @@
 <!--pages/home/content/detail/detail.wxml-->
 <view wx:if="{{times != subject.length-1}}"> 
 	<view wx:for="{{subject}}" wx:key="ID">
-		<view wx:if="{{item.ID == detail_id}}" class="gushi-page">
+		<view wx:if="{{item.title == detail_id}}" class="gushi-page">
 			<view class="gushi {{showTrue?'isShow':'isHide'}}">
 				<view wx:if="{{item.status == 0}}" class="shoucang-position">
 					<view catchtap="shoucang" class="iconfont .icon-shoucang1 shoucang-style" data-index="{{index}}"></view>

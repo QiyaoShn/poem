@@ -77,12 +77,11 @@ Page({
   
   onLoad: function (options) {
     wx.setNavigationBarTitle({ 
-      title: "ID: "+options.id + " 详情" 
+      title: options.id
     }) 
     for (let i = 0; i < this.data.subject.length; ++i) {
-        if(this.data.subject[i].ID == options.id)
+        if(this.data.subject[i].title == options.id)
         {
-          console.log("yes")
           this.setData({
             detail_id: options.id
           })

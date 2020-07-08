@@ -50,16 +50,15 @@ Page({
     var shiId = event.currentTarget.dataset.shiId
      console.log(shiId);
     wx.navigateTo({
-      url: '/pages/home/content/detail/detail?id=' + shiId,
+      url: '/pages/home/content/detail_title/detail?id=' + shiId,
     })
   },
-
-  sousuo:function(event){
-    var shiId = event.currentTarget.dataset.shiId
-     console.log(shiId);
-    wx.navigateTo({
-      url: '/pages/home/content/detail/detail?id=' + shiId,
-    })
-  },
-  
+  clean:function(){
+    var that = this;
+    setTimeout(function () {
+      that.setData({
+        searchValue:' '
+      })
+    },100)
+  }
 })
