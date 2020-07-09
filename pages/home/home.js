@@ -72,6 +72,12 @@ Page({
       // 下面是处理逻辑示例
       console.log(result)
       this.setData({"shici": result.data})
+      wx.hideNavigationBarLoading({
+        complete: (res) => {},
+      })
+    })
+    wx.showNavigationBarLoading({
+      complete: (res) => {},
     })
   },
 
@@ -85,6 +91,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    /*
     var that = this;
 
     
@@ -113,13 +120,20 @@ Page({
         
       }
     })
-    wx.showNavigationBarLoading()
+    wx.showNavigationBarLoading() 
+    */
 
     jinrishici.load(result => {
       // 下面是处理逻辑示例
       console.log(result)
       this.setData({"shici": result.data})
-    })
+      wx.hideNavigationBarLoading({
+        complete: (res) => {},
+      })
+    })    
+    
+    wx.showNavigationBarLoading()
+    
   },
 
   /**
