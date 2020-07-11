@@ -25,14 +25,14 @@ Page({
       author: "杜甫",
       dynasty: "[唐]",
       id: 3,
-      isrecite: false
+      isRecite: false
     },
     {
       title: "游山西村",
       author: "陆游",
       dynasty: "[北宋]",
       id: 4,
-      isrecite: false
+      isRecite: false
    }
     ]
   },
@@ -43,6 +43,14 @@ Page({
     wx.navigateTo({
       url: '/pages/home/content/detail/detail?id=' + shiId,
     })
+  },
+
+  recite(e){
+    var that = this.data.catalog
+    for(let i=0; i < that.length; ++i){
+              that[i].isRecite = that[i].isRecite ? false: true
+
+    }
   },
 
   /**
