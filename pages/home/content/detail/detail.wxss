@@ -4,7 +4,14 @@
   align-items: center;
   justify-content: space-evenly;
   margin-inline: 60rpx;
-  margin-top: 30rpx;
+  margin-top: 50rpx; 
+} 
+.buchong{ 
+  background-color: #FBFAF5 ; 
+  position: absolute; 
+  width: 713rpx; 
+  height: 33rpx; 
+  top: 20rpx 
 }
 .shoucang-position{
   display: flex;

@@ -94,7 +94,7 @@
     position: relative;
     margin-left:450rpx;
     padding: 30rpx;
-    top: -660rpx;
+    top: -690rpx;
   }
 
 .item-word1{
@@ -113,5 +113,5 @@
 }
 .item-position{
   width: 100%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
