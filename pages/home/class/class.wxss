@@ -1,0 +1,24 @@
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+  font-size: 19px;
+  font-weight: 600;
+  
+}
+.center{
+  flex-wrap: wrap;
+  padding: 0rpx 25rpx;
+  
+}
+.classify{
+    background-color: #fff;
+    border: 1rpx solid #EB602E;
+    border-radius: 30%;
+    width: 125rpx;
+    height: 100%;    
+    
+    float: left;
+    margin: 0 25rpx;
+    margin-top: 30rpx;
+}

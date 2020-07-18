@@ -57,7 +57,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      if(options.classic)
+      {
+        console.log(options.classic)
+        wx.setNavigationBarTitle({
+          title: options.classic
+        })
+      }
+      else
+      {
+        wx.setNavigationBarTitle({
+          title: "小学/初/高中诗词目录",
+        })
+      }
   },
 
   /**
