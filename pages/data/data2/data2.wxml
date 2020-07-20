@@ -15,10 +15,10 @@
 <view class="background1"></view>
 <view class="background2">
      <view class="page" hover-class='btn'>
-          <navigator class="page2" url="/pages/data/data2/data2" open-type="reLaunch" hover-class="none"> 学习曲线 
+          <navigator class="page2" url="/pages/data/data" open-type="reLaunch" hover-class="none">诗文喜好 
           </navigator>
      </view>
-     <image class="shuju1" src="/images/数据2.png" ></image>
+     <image class="shuju2" src="/images/数据1.png" ></image>
 </view>
 <icon class="iconfont icon-xingxing-copy"></icon>
 

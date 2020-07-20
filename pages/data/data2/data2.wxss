@@ -12,7 +12,7 @@ page{
  width:710rpx;height:270rpx;margin:25rpx 20rpx;border-radius: 20rpx;
 }
 .background2{
-  width:100%;height:800rpx;background:white;border-radius:50rpx;position: absolute;top: 320rpx;
+  width:100%;height:885rpx;background:white;border-radius:50rpx;position: absolute;top: 320rpx;
 }
 
  @font-face {
@@ -43,7 +43,6 @@ page{
   opacity: 0.9;
   background: #e9e9e9;
 }
-
-.shuju1{
-  width:720rpx;height: 700rpx;
+.shuju2{
+  width: 600rpx;height: 600rpx;position: relative;top: 100rpx;left: 50rpx;
 }
