@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-inline: 60rpx;
+  margin-inline: 80rpx;
+  margin-left: 100rpx;
   margin-top: 50rpx; 
 } 
 .buchong{ 
@@ -24,7 +25,23 @@
   left: 80rpx;
   margin-top: 15rpx;
 }
-
+.laba-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 80rpx;
+}
+.laba-2{
+  font-size: 20px;
+  margin-left: 50rpx;
+  color: #4c7ee9;
+}
+.da-yin{
+  position: absolute;
+  font-size: 22px;
+  left: 80rpx;
+  margin-top: 105rpx;
+}
 .gushi_detail{
   display: flex;
   flex-direction: column;

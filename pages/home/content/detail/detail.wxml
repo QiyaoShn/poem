@@ -6,7 +6,11 @@
 			<view class="gushi {{showTrue?'isShow':'isHide'}}">
 				<view wx:if="{{item.status == 0}}" class="shoucang-position">
 					<view catchtap="shoucang" class="iconfont .icon-shoucang1 shoucang-style" data-index="{{index}}"></view>
-					<text>{{item.title}}</text>
+					<view class="iconfont .icon-print da-yin"></view>
+					<view class="laba-1">
+						<text>{{item.title}}</text>
+						<view class="iconfont .icon-horn laba-2"></view>
+					</view>
 				</view>
 				<view wx:if="{{item.status == 1}}" class="shoucang-position">
 					<view catchtap="quxiaoShoucang" data-index="{{index}}" class="iconfont .icon-collection-b shoucang-style"></view>
