@@ -1,1 +1,33 @@
-<text>待开发~</text>
+<view>
+	<view class="tabNav">
+		<view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}"><text>{{item}}</text></view>
+	</view>
+	<view class="bang-dan">
+		<view class="NO3-bang">
+      <view class="mo-ban">
+			<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595393476159&di=197c1754a0a3f263b5ac971def1d400c&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F6e8f56b2543cce8bffa35b22d03684fae76a1b2c56c32-COdswi_fw658" class="tou-xiang"></image><text style="font-size:12px;color:purple">第二名\n20首</text></view>
+      <view class="mo-ban">
+			<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595393510615&di=f007c6a71f0638faf4a7e024a68bfc5f&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F17%2F20190117230425_eofqv.thumb.700_0.jpg" class="tou-xiang"></image><text style="font-size:12px;color:red">第一名\n50首</text></view>
+			<view class="mo-ban">
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=251289958,1860898046&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:12px;color:orange">第三名\n15首</text></view>
+		</view>
+		<view class="NO4-bang">
+			<image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3361954929,3935891053&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.4</text>
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2082848815,1382311806&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.5</text>
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3361954929,3935891053&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.6</text>
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2082848815,1382311806&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.7</text>
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3361954929,3935891053&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.8</text>
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2082848815,1382311806&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.9</text>
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3361954929,3935891053&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.10</text>
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2082848815,1382311806&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.11</text>
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3361954929,3935891053&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.12</text>
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2082848815,1382311806&fm=26&gp=0.jpg" class="tou-xiang"></image><text style="font-size:10px">NO.13</text>
+		</view>
+    <!--有了接口以后用这段代码
+		<view class="NO3-bang" wx:for="{{sendList}}" wx:key="index">
+		{{item.content}}</view>
+		<view class="NO4-bang" wx:for="{{sendList}}" wx:key="index">
+		{{item.content}}</view>
+  -->
+	</view>
+</view>
