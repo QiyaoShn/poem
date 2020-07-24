@@ -37,7 +37,16 @@ Page({
     ]
   },
   onLoad: function(e){
-    
+    console.log(e.wh) 
+    if(e.wh)
+    this.setData({
+      which: e.wh
+    })
+    else{
+      this.setData({
+        which: 0
+      })
+    }
   },
   searchValueInput:function(e){
     var value=e.detail.value;
@@ -52,6 +61,12 @@ Page({
     wx.navigateTo({
       url: '/pages/home/content/detail_title/detail?id=' + shiId,
     })
+  },
+  tocontent(e){
+    var lei = e.currentTarget.dataset.shiId
+      wx.navigateTo({
+        url: '/pages/home/content/content?classic='+lei,
+      })
   },
   clean:function(){
     var that = this;

@@ -1,15 +1,14 @@
 <form>
-  <view class="sousuo">
-    <view class="sousuokuang">
-      <image class="iconfont .icon-sousuokuang sousuo-icon1" data-shi-id="{{searchValue}}" catchtap="sousuoId"></image>
-      <image class="iconfont .icon-sousuokuangshanchu sousuo-icon2"></image>
-      <input type="text" value="{{searchValue}}" placeholder="请输入..." bindinput="searchValueInput" class="sousuoInfo" confirm-type="search" auto-focus="{{true}}" bindconfirm="sousuoId" data-shi-id="{{searchValue}}"></input>
-    </view>
-    <text class="sousuo-word">请输入您要搜索的古诗名称或诗人名Id字</text>
-     
-  </view>
+	<view class="sousuo">
+		<view class="sousuokuang">
+			<image class="iconfont .icon-sousuokuang sousuo-icon1" data-shi-id="{{searchValue}}" catchtap="sousuoId"></image>
+			<image class="iconfont .icon-sousuokuangshanchu sousuo-icon2"></image>
+			<input wx:if="{{which==0}}" type="text" value="{{searchValue}}" placeholder="输入分类名..." bindinput="searchValueInput" class="sousuoInfo" confirm-type="search" auto-focus="{{true}}" bindconfirm="tocontent" data-shi-id="{{searchValue}}"></input>
+			<input wx:else type="text" value="{{searchValue}}" placeholder="输入古诗名..." bindinput="searchValueInput" class="sousuoInfo" confirm-type="search" auto-focus="{{true}}" bindconfirm="sousuoId" data-shi-id="{{searchValue}}"></input>
+		</view>
+	</view>
 </form>
-<view>推荐:</view>
-<view wx:for="{{catalog}}" wx:key="id">
-  <view>{{item.title}}</view>
+<view class="sousuo-word" style=" margin-left: 50rpx">推荐:
+	<text wx:if="{{which==0}}">思乡、爱国、文言文...</text>
+	<text wx:else>观刈麦、夜雨寄北、春望...</text>
 </view>

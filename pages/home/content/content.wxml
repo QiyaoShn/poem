@@ -5,9 +5,9 @@
 			<text style="margin: 5rpx 15rpx;">{{item.dynasty}}</text>
 			<text>{{item.author}}</text>
 		</view>
-		<view class="recite" data-id="{{item.id}}"  catchtap="{{recite}}">
-			<image wx:if="{{item.isRecite}}"  class="iconfont .icon-wancheng-copy"></image>
-			<image wx:else  class="iconfont .icon-weiwancheng" ></image>
+		<view class="recite" >
+			<image wx:if="{{item.isRecite}}"  class="iconfont .icon-wancheng-copy" catchtap="recite" data-id="{{index}}"></image>
+			<image wx:else  class="iconfont .icon-weiwancheng" catchtap="recite" data-id="{{index}}"></image>
 		</view>
 	</view>
 </view>

@@ -12,4 +12,11 @@ Page({
         url: '/pages/home/content/content?classic='+lei,
       })
   },
+
+  tosearch(e){
+    var wh = e.currentTarget.dataset.which
+    wx.navigateTo({
+      url: '/pages/home/find/find?wh='+wh,
+    })
+  },
 })

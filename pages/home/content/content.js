@@ -18,7 +18,7 @@ Page({
         author: "李商隐",
         dynasty: "[晚唐]",
         id: 2,
-        isRecite: true
+        isRecite: false
      },
     {
       title: "春望",
@@ -46,11 +46,24 @@ Page({
   },
 
   recite(e){
-    var that = this.data.catalog
-    for(let i=0; i < that.length; ++i){
-              that[i].isRecite = that[i].isRecite ? false: true
-
-    }
+    var id = e.currentTarget.dataset.id
+     
+     for (let i = 0; i < this.data.catalog.length; ++i){
+          if(i == id){
+            if(this.data.catalog[0].isRecite == true){
+              this.setData({
+                ["catalog["+id+"].isRecite"]: false
+              })
+            }
+            else
+            {
+              this.setData({
+                ["catalog["+id+"].isRecite"]: true
+              })
+            }
+          }
+     }
+    
   },
 
   /**

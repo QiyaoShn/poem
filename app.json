@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/class/class",
     "pages/home/home",
     "pages/my/setup/setup",
     "pages/my/my",
@@ -11,7 +12,7 @@
     "pages/home/content/detail_title/detail",
     "pages/home/paihangb/paihangb",
     "pages/home/find/find",
-    "pages/home/class/class",
+    
     "pages/my/vedio/vedio",
     "pages/my/star/star",
     "pages/my/setup/weare/weare",
