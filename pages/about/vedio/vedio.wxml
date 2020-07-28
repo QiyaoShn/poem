@@ -1,0 +1,27 @@
+<view class="head">
+	<input type="text" placeholder="请输入已收藏的作品" placeholder-style="color:#000"></input>
+</view>
+<view class="type-pad">
+	<block wx:key="id" wx:for="{{topBars}}">
+		<text class="{{selectType==item.id?'select':''}}" bindtap="selectBar" data-typeid="{{item.id}}">{{item.name}}</text>
+	</block>
+</view>
+<view  wx:if="{{selectType=='1'}}">
+       <myview id="myvedio"usearname="233"title="人生得意须尽欢" vedio="">  </myview>
+      <myview id="myvedio"usearname="ACE"title="富有隽永的诗味，倾诉了宫女无穷的哀怨之情，寄托了诗人深沉的盛衰之感" vedio="">  </myview>
+</view>
+
+<view  wx:if="{{selectType=='2'}}">
+      <myview id="myvedio"usearname="ACE"title="人生得意须尽欢，莫使金樽空对月" vedio="">  </myview>
+      <myview id="myvedio"usearname="ACE"title="【赏析：元稹这首《行宫》是一首抒发盛衰之感的诗，这首短小精悍的五绝具有深邃的意境，富有隽永的诗味，倾诉了宫女无穷的哀怨之情，寄托了诗人深沉的盛衰之感。】" vedio="">  </myview>
+</view>
+
+<view  wx:if="{{selectType=='3'}}">
+       <myview id="myvedio"usearname="ACE"title="莫使金樽空对月" vedio="">  </myview>
+      <myview id="myvedio"usearname="ACE"title="【赏析：元稹这首《行宫》是一首抒发盛衰之感的诗，这首短小精悍的五绝具有深邃的意境，富有隽永的诗味" vedio="">  </myview>
+</view>
+
+<view  wx:if="{{selectType=='4'}}">
+       <myview id="myvedio"usearname="ACE"title="人生欢，莫月" vedio="">  </myview>
+      <myview id="myvedio"usearname="ACE"title="【赏析：，倾诉了宫女无穷的哀怨之情，寄托了。】" vedio="">  </myview>
+</view>

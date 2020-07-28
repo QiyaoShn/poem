@@ -1,0 +1,12 @@
+<view class="biaoti">
+    <view class="biaoti1 ">
+        <text>今日背诵</text>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</text>
+    </view>
+    <image class='iconfont .icon-xingxing-copy'></image>  
+</view>
+
+<view class="biaoti2">
+    <text>累计背诵: </text>
+    <text>40</text>
+</view>
