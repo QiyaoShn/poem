@@ -14,7 +14,11 @@
 				</view>
 				<view wx:if="{{item.status == 1}}" class="shoucang-position">
 					<view catchtap="quxiaoShoucang" data-index="{{index}}" class="iconfont .icon-collection-b shoucang-style"></view>
-					<text>{{item.title}}</text>
+					<view class="iconfont .icon-print da-yin"></view>
+					<view class="laba-1">
+						<text>{{item.title}}</text>
+						<view class="iconfont .icon-horn laba-2"></view>
+					</view>
 				</view>
 				<text style="margin: 10rpx 0;">{{item.author}}</text>
 				<text style="margin-top: 20rpx;">{{item.content}}</text>

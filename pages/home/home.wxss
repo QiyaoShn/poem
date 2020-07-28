@@ -58,7 +58,7 @@
   display: flex;
   justify-content: space-around;
   width: 375px;
-  height: 64px;
+  height: 140rpx;
   background-color: #F2F4F4;
   align-items:center;
 }
@@ -113,5 +113,5 @@
 }
 .item-position{
   width: 100%;
-  margin-top: 25px;
+  margin-top:25px;
 }

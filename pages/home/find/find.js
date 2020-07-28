@@ -38,15 +38,9 @@ Page({
   },
   onLoad: function(e){
     console.log(e.wh) 
-    if(e.wh)
     this.setData({
       which: e.wh
     })
-    else{
-      this.setData({
-        which: 0
-      })
-    }
   },
   searchValueInput:function(e){
     var value=e.detail.value;
