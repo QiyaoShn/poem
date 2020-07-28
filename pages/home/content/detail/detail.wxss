@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin-inline: 80rpx;
-  margin-left: 100rpx;
+  margin-left: 20rpx;
   margin-top: 50rpx; 
 } 
 .buchong{ 
