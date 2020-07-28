@@ -32,8 +32,11 @@
   width: 64rpx;
   height: 64rpx;
   position: absolute;
-  top: 170rpx;
+  top: 155rpx;
   left: 15rpx;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #6D7173;
   background: #EEECEC;
 }
 
@@ -41,8 +44,11 @@
   width: 64rpx;
   height: 64rpx;
   position: absolute;
-  top: 170rpx;
+  top: 150rpx;
+  color: #6D7173;
+  border-radius: 50%;
   right: 15rpx;
+  font-size: 30px;
   background: #EEECEC;
 }
 
