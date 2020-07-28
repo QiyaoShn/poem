@@ -5,6 +5,7 @@
 	<block wx:key="id" wx:for="{{topBars}}">
 		<text class="{{selectType==item.id?'select':''}}" bindtap="selectBar" data-typeid="{{item.id}}">{{item.name}}</text>
 	</block>
+      <view class="iconfont .icon-weibiaoti1 photo" catchtap="photo"></view>
 </view>
 <view  wx:if="{{selectType=='1'}}">
        <myview id="myvedio"usearname="233"title="人生得意须尽欢" vedio="">  </myview>

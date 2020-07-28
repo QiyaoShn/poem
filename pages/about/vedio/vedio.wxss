@@ -19,6 +19,8 @@
   height: 40px;
   border-bottom: 1px solid #f0f0f0;
   line-height: 40px;
+  display: flex;
+  justify-content: row;
   }
   .type-pad text{
     margin:0 20px;
@@ -26,4 +28,11 @@
   }
   .type-pad text.select{
     color:red;
+  }
+  .photo{
+    position: absolute;
+    font-size: 25px;
+    right: 50rpx;
+    top: 97rpx;
+    color: grey;
   }

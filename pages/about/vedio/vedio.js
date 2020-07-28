@@ -19,6 +19,9 @@ Page({
       selectType:typeId,
     });
   },
+  photo:function(){
+
+  },
 
 
   /**
