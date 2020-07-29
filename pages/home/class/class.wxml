@@ -8,26 +8,26 @@
 </view>
 <view>
 	<view class="title">体裁</view>
-	<view wx:for="{{ticai}}" class="center">
+	<view wx:for="{{ticai}}" class="center" wx:key="item">
 		<button wx:if="{{index == ticai.length-1}}" style="float: none; font-size: 10px" size="mini" class="classify" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 		<button wx:else size="mini" class="classify" style="font-size: 10px" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 	</view>
 
 
 	<view class="title">朝代</view>
-	<view wx:for="{{chaodai}}" class="center">
+	<view wx:for="{{chaodai}}" class="center" wx:key="item">
 		<button wx:if="{{index == chaodai.length-1}}" style="float: none; font-size: 10px" size="mini" class="classify" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 		<button wx:else size="mini" class="classify" style="font-size:10px" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 	</view>
 
   <view class="title">作者</view>
-	<view wx:for="{{zuozhe}}" class="center">
+	<view wx:for="{{zuozhe}}" class="center" wx:key="item">
 		<button wx:if="{{index == zuozhe.length-1}}" style="float: none; font-size: 10px" size="mini" class="classify" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 		<button wx:else size="mini" class="classify" style="font-size: 10px" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 	</view>
 
   <view class="title">标签</view>
-	<view wx:for="{{tags}}" class="center">
+	<view wx:for="{{tags}}" class="center" wx:key="item">
 		<button wx:if="{{index == tags.length-1}}" style="float: none; font-size: 10px" size="mini" class="classify" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 		<button wx:else size="mini" class="classify" style="font-size: 10px" bindtap="tocontent" data-lei="{{item}}">{{item}}</button>
 	</view>
