@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'iconfont';  /* project id 1915361 */
-    src: url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.eot');
-    src: url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.woff2') format('woff2'),
-    url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.woff') format('woff'),
-    url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_1915361_euhz5l3bhf.svg#iconfont') format('svg');
-  }
+  font-family: 'iconfont';  /* project id 1915361 */
+  src: url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.eot');
+  src: url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1915361_k3xdkoa5ly.svg#iconfont') format('svg');
+}
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 31px;
@@ -41,7 +41,7 @@
   color: #FBED19;
 }
 .icon-sousuokuang:before{
-  content: "\e644";
+  content: "\e636";
 }
 .icon-sousuokuangshanchu:before{
   content: "\e60c";
@@ -134,3 +134,32 @@
   font-size: 25px; 
 }
 
+@font-face {
+  font-family: 'iconfont';  /* project id 1952585 */
+  src: url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.eot');
+  src: url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1952585_sf6cbj99rg.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aixin1:before {
+  content: "\e63c";
+}
+
+.icon-course:before {
+  content: "\e698";color: #00f3fc;font-size: x-large; font-weight: 600; position: absolute;top: 28rpx;left: 90%;
+}
+
+.icon-xingxing-copy:before {
+  content: "\e644";color: black;font-size:xx-large ;position: absolute;top: 100rpx;left: 430rpx;
+}

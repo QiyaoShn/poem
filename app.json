@@ -1,10 +1,8 @@
 {
   "pages": [
-    "pages/home/class/class",
     "pages/home/home",
     "pages/my/setup/setup",
     "pages/my/my",
-    "pages/about/about",
     "pages/data/data",
     "pages/home/day/day",
     "pages/home/content/content",
@@ -12,12 +10,11 @@
     "pages/home/content/detail_title/detail",
     "pages/home/paihangb/paihangb",
     "pages/home/find/find",
-    
-    "pages/my/vedio/vedio",
-    "pages/my/star/star",
+    "pages/home/class/class",
     "pages/my/setup/weare/weare",
     "pages/my/setup/ziliao/ziliao",
-    "pages/my/setup/fankui/fankui"
+    "pages/my/setup/fankui/fankui",
+    "pages/about/vedio/vedio"
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",
@@ -34,7 +31,7 @@
         "selectedIconPath": "images/shouye2.png"
       },
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "pages/about/vedio/vedio",
         "text": "发现",
         "iconPath": "images/faxian1.png",
         "selectedIconPath": "images/faxian2.png"

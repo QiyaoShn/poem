@@ -31,7 +31,7 @@
   border-bottom: 1rpx solid #EEECEC;
 }
 .weui-cell__bd{
-  margin-top: 15rpx;
+  margin-top: 30rpx;
 }
 .bottoner{
   background-color: red;
