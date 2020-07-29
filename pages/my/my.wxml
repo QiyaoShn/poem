@@ -32,13 +32,13 @@
 <view class="jj">
   <image class="pt iconfont .icon-video"></image>
   <text class="wd">我的视频作品</text>
-  <navigator url="/pages/my/vedio/vedio" class="nj" hover-class="none"><view class="zza2">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
+  <navigator url="/pages/about/vedio/vedio" class="nj" open-type="reLaunch"   hover-class="none"><view class="zza2">0</view><image class="pt2 iconfont .icon-jiantou"></image></navigator>
   </view>
 
 <view class="jj">
   <image class="pt iconfont .icon-shoucang"></image>
   <text class="wd">我的收藏</text>
-  <navigator url="/pages/my/star/star" class="nj" hover-class="none">
+  <navigator url="/pages/about/vedio/vedio" class="nj" hover-class="none" open-type="reLaunch" >
   <view class="zza1">0</view>
   <image class="pt3 iconfont .icon-jiantou"></image>
   </navigator>

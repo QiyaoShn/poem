@@ -5,17 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    title:[
+      {id: 1,name:"数据分析"},
+      {id: 2,name:"诗文喜好"},
+     ],
+      selectType:1,
+   },
+    selectBar(e){
+      var typeId = e.currentTarget.dataset.typeid;
+      this.setData({
+        selectType:typeId,
+      });
   },
-
-
-
-
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function () {
 
   },
 

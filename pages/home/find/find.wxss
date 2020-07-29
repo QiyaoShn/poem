@@ -14,9 +14,10 @@ page{
 .sousuo-icon1{
   position: absolute;
   width: 31px;
-  height: 31px;
+  height: 20px;
+  font-size: 40rpx;
   color: gray;
-  left: 20rpx;
+  left: 30rpx;
  
 }
 .sousuo-icon2{

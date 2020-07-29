@@ -1,24 +1,18 @@
-<!--pages/data/data.wxml-->
-<view class="biaoti">
-    <view class="biaoti1">
-        <text>今日背诵</text>
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</text>
-    </view>
+
+<mycomponent id="mycomponent"></mycomponent>
+
+<view class="page" >
+   <block wx:key="id" wx:for="{{title}}">
+   	<text class="{{selectType==item.id?'title':''}}" bindtap="selectBar" data-typeid="{{item.id}}">{{item.name}}</text>
+   </block>
 </view>
 
 
-<view class="biaoti2">
-    <text>累计背诵: </text>
-    <text>40</text>
-</view>
 
-<view class="background1"></view>
-<view class="background2">
-     <view class="page" hover-class='btn'>
-          <navigator class="page2" url="/pages/data/data2/data2" open-type="reLaunch" hover-class="none"> 学习曲线 
-          </navigator>
-     </view>
-     <image class="shuju1" src="/images/数据2.png" ></image>
+<view class="background2"  wx:if="{{selectType=='1'}}">
+<image class="shuju" src="/images/数据2.png"></image>
 </view>
-<icon class="iconfont icon-xingxing-copy"></icon>
+<view class="background2"  wx:if="{{selectType=='2'}}">
+<image class="shuju" src="/images/数据1.png"></image>
+</view>
 
