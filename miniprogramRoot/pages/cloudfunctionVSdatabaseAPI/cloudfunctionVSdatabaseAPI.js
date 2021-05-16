@@ -12,6 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
     var _this = this;
     //1、引用数据库   
     const db = wx.cloud.database({
@@ -27,7 +28,13 @@ Page({
         this.setData({
           id: res.data
         })
+        console.log(this.data.id[0].id);
+        for (let i = 1; i < this.data.id.length; ++i) {
+          console.log(this.data.id[i].id)
+        }
       }
-    })
+    });
+   
+    
   },    
 })

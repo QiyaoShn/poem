@@ -1,40 +1,14 @@
 // pages/home/content/content.js
+const db = wx.cloud.database({});
+const cont = db.collection('poem');
 Page({
 
   /**
    * 页面的初始数据
    */
+  
   data: {
-    catalog: [
-      {
-          title: "观刈麦",
-          author: "白居易",
-          dynasty: "[唐]",
-          id: 1,
-          isRecite: true
-      },
-      {
-        title: "夜雨寄北",
-        author: "李商隐",
-        dynasty: "[晚唐]",
-        id: 2,
-        isRecite: false
-     },
-    {
-      title: "春望",
-      author: "杜甫",
-      dynasty: "[唐]",
-      id: 3,
-      isrecite: false
-    },
-    {
-      title: "游山西村",
-      author: "陆游",
-      dynasty: "[北宋]",
-      id: 4,
-      isrecite: false
-   }
-    ]
+    catalog: []
   },
 
   todetail(event){
@@ -48,9 +22,9 @@ Page({
   recite(e){
     var id = e.currentTarget.dataset.id
      
-     for (let i = 0; i < this.data.catalog.length; ++i){
+     for (let i = 1; i < this.data.catalog.length; ++i){
           if(i == id){
-            if(this.data.catalog[0].isRecite == true){
+            if(this.data.catalog[1].isRecite == true){
               this.setData({
                 ["catalog["+id+"].isRecite"]: false
               })
@@ -70,6 +44,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var _this = this;
+    //1、引用数据库   
+    const db = wx.cloud.database({  
+      env: 'asd-8i5n5'
+    })
+    //2、开始查询数据了  news对应的是集合的名称   
+    db.collection('poem').get({
+      //如果查询成功的话    
+      success: res => {
+        console.log(res.data)
+        //赋值，没有这一步的话，前台就不会显示值      
+        this.setData({
+          catalog: res.data
+        })
+      }
+    })
       if(options.classic)
       {
         console.log(options.classic)

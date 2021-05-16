@@ -2,7 +2,23 @@
 const recorderManager = wx.getRecorderManager() //录音对象
 const innerAudioContext = wx.createInnerAudioContext() //播放对象
 const db = wx.cloud.database({});
-const cont = db.collection('poem');
+const MAX_LIMIT = 20
+const cont = db.collection('poem').count().then(async res =>{
+  let total = res.total;
+  // 计算需分几次取
+  const batchTimes = Math.ceil(total / MAX_LIMIT)
+  // 承载所有读操作的 promise 的数组
+  for (let i = 0; i < batchTimes; i++) {
+    await db.collection('poem').skip(i * MAX_LIMIT).limit(MAX_LIMIT).get().then(async res => {
+      let new_data = res.data
+      let old_data = that.data.allRecords
+      that.setData({
+        allRecords : old_data.concat(new_data)
+      })
+    })
+  }
+  console.log(that.data.allRecords[0])
+})
 Page({
 
   /**
@@ -60,7 +76,7 @@ Page({
     //1、引用数据库   
     const db = wx.cloud.database({  
       env: 'asd-8i5n5'
-    })
+    });
     //2、开始查询数据了  news对应的是集合的名称   
     db.collection('poem').get({
       //如果查询成功的话    
@@ -70,24 +86,25 @@ Page({
         this.setData({
           subject: res.data
         })
+        for (let i = 0; i < this.data.subject.length; i++) {
+          if(this.data.subject[i].id == options.id)
+          {
+            console.log("yes")
+            this.setData({
+              detail_id: options.id
+            })
+            return
+          }
+          this.setData({
+            times: i
+          })
       }
-    })
+      }
+    });
     wx.setNavigationBarTitle({ 
       title: "ID: "+options.id + " 详情" 
-    }) 
-    for (let i = 0; i < this.data.subject.length; ++i) {
-        if(this.data.subject[i].ID == options.id)
-        {
-          console.log("yes")
-          this.setData({
-            detail_id: options.id
-          })
-          return
-        }
-        this.setData({
-          times: i
-        })
-    }
+    }); 
+    
       
   },
   
