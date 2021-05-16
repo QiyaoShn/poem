@@ -1,0 +1,13 @@
+<view>
+	<view wx:for="{{catalog}}" wx:key="id" data-shi-id="{{item.id}}" bindtap="todetail" class="every">
+		<view style="font-size:18px; font-weight:500; margin: 10rpx 15rpx">{{item.title}}</view>
+		<view class="canvas">
+			<text style="margin: 5rpx 15rpx;">{{item.dynasty}}</text>
+			<text>{{item.author}}</text>
+		</view>
+		<view class="recite" >
+			<image wx:if="{{item.isRecite}}"  class="iconfont .icon-wancheng-copy" catchtap="recite" data-id="{{index}}"></image>
+			<image wx:else  class="iconfont .icon-weiwancheng" catchtap="recite" data-id="{{index}}"></image>
+		</view>
+	</view>
+</view>

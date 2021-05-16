@@ -1,0 +1,38 @@
+/* pages/my/vedio/vedio.wxss */.head{
+  background-color: rgb(0, 174, 255);
+  height: 50px;
+  overflow: hidden;
+}
+.head input{
+  width: 80%;
+  background-color: #fff;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.type-pad{
+  height: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 40px;
+  display: flex;
+  justify-content: row;
+  }
+  .type-pad text{
+    margin:0 20px;
+    font-size: 14px;
+  }
+  .type-pad text.select{
+    color:red;
+  }
+  .photo{
+    position: absolute;
+    font-size: 25px;
+    right: 50rpx;
+    top: 101rpx;
+    color: grey;
+  }

@@ -1,0 +1,39 @@
+/* pages/my/setup/setup.wxss */
+.line{
+  display: flex;
+  margin: 40rpx 20rpx;
+}
+.jt{
+  
+    position: relative;
+    width: 40rpx;
+    height: 25px;
+    right: -510rpx;
+    top: 33rpx;
+    color: #605D5D;
+    font-size: 25px;
+
+}
+.sz{
+  display: flex;
+  flex-direction:row ;
+  border-bottom: 1rpx solid #EEECEC;
+}
+.yj{
+  margin-left: 460rpx;
+  margin-bottom: 40rpx;
+
+}
+.weui-cell__ft{
+  display:flex;
+  flex-direction: row;
+  margin: 40rpx 20rpx 20rpx;
+  border-bottom: 1rpx solid #EEECEC;
+}
+.weui-cell__bd{
+  margin-top: 30rpx;
+}
+.bottoner{
+  background-color: red;
+  
+}

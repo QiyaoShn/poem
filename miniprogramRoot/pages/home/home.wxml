@@ -1,0 +1,46 @@
+<!--pages/home/home.wxml-->
+<!--第一部分zz编辑-->
+<view>
+	<swiper style="height: 30vh;" indicator-dots="{{true}}" current="{{frist}}">
+		<swiper-item class="shi-tu1">
+			<text class="shi-title">每日一诗</text>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
+			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="2" catchtap="content"></image>
+		</swiper-item>
+		<swiper-item class="shi-tu2">
+			<text class="shi-title">每日一诗</text>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
+			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="{{frist}}" catchtap="content"></image>
+			<image class='iconfont .icon-jiantou shi-next' data-shi-ci="3" catchtap="content"></image>
+		</swiper-item>
+		<swiper-item class="shi-tu3">
+			<text class="shi-title">每日一诗</text>
+			<navigator class="shi-ju" url="/pages/home/day/day"> {{shici.content}}</navigator>
+			<image class='iconfont .icon-jiantou-copy shi-back' data-shi-ci="2" catchtap="content"></image>
+		</swiper-item>
+
+	</swiper>
+</view>
+<!--分割线，方便修改-->
+<view class="kuaijie-position">
+	<navigator  wx:for="{{kuaijie}}" wx:for-item="kuaijie" data-code="{{kuaijie.codes}}" data-type="kuaijie" wx:key="codes" url="{{kuaijie.urlTo}}" class="{{kuaijie.image}}"><text class="kuaijie-word">{{kuaijie.name}}</text></navigator>
+</view>
+<!--分割线，方便修改-->
+<view class="item-position">
+	<view class="item-style" wx:for="{{listGushi}}" wx:for-item="listGushi" data-code="{{listGushi.listCode}}" data-type="listGushi" wx:key="listCode" bindtap="to_content">
+		<view class="item-barStyle"></view>
+		<view class="item-body">
+			<view class="item-word1">{{listGushi.listName}}</view>
+			<text class="item-word2">{{listGushi.listExample}}</text>
+		</view>
+	</view>
+</view>
+<view class="item-position">
+	<view class="item-style2" wx:for="{{listGuwen}}" wx:for-item="listGuwen" data-code="{{listGuwen.listCode}}" data-type="listGuwen" wx:key="listCode" bindtap="to_content">
+		<view class="item-barStyle"></view>
+		<view class="item-body">
+			<view class="item-word1">{{listGuwen.listName}}</view>
+			<text class="item-word2">{{listGuwen.listExample}}</text>
+		</view>
+	</view>
+</view>

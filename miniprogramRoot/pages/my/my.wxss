@@ -1,0 +1,120 @@
+.indexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100rpx;
+  margin:50rpx 0;
+
+}
+.userName{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin:10rpx 0;
+}
+button {
+  position: absolute;
+  width: 300rpx;
+  height: 90rpx;
+  top: 90rpx;
+  left: 220rpx;
+}
+.wz {
+  display: flex;
+  flex-direction: column;
+}
+
+.pt {
+  position: relative;
+}
+.wz{
+  display:flex;
+  flex-direction:column;
+}
+
+.pt{
+
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  
+}
+
+.line {
+  background-color: #EEECEC;
+  height: 20rpx;
+}
+.jj {
+  display: flex;
+  border-bottom: 1px solid #EEECEC;
+  margin: 10px 10px;
+}
+.wd {
+  margin: 20px 50px 0px 0px;
+  font-size: 15px;
+  color: #605D5D;
+}
+.picker{
+  position: relative;
+  color: #605D5D;
+  left: 230rpx;
+  top: 45rpx;
+  font-size: 16px;
+
+}
+.zza2{
+  position: relative;
+  color: #605D5D;
+  left: 250rpx;
+  top: 45rpx;
+  font-size: 14px;
+}
+.zza1 {
+  position: relative;
+  color: #605D5D;
+  left: 310rpx;
+  top: 45rpx;
+  font-size: 14px;
+}
+.pt1{
+  position: relative;
+  width: 40rpx;
+  height: 25px;
+  right: -335rpx;
+  color: #605D5D;
+  font-size: 25px;
+}
+.pt2 {
+  position: relative;
+  width: 40rpx;
+  height: 25px;
+  right: -270rpx;
+
+  color: #605D5D;
+  font-size: 25px;
+}
+.pt3 {
+  position: relative;
+  width: 40rpx;
+  height: 25px;
+  right: -330rpx;
+
+  color: #605D5D;
+  font-size: 25px;
+}
+.pt4 {
+  position: relative;
+  width: 40rpx;
+  height: 25px;
+  right: -385rpx;
+  top: 33rpx;
+  color: #605D5D;
+  font-size: 25px;
+}
+.nj{
+  position:relative;
+}

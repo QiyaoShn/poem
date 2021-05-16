@@ -1,5 +1,7 @@
 {
 	"description": "项目配置文件",
+	"cloudfunctionRoot": "cloudfunctionRoot/",
+	"miniprogramRoot": "miniprogramRoot/",
 	"packOptions": {
 		"ignore": []
 	},
@@ -40,6 +42,7 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -65,9 +68,9 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "pages/data/data",
-					"pathName": "pages/data/data",
+					"id": 0,
+					"name": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
+					"pathName": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
 					"query": "",
 					"scene": null
 				},
@@ -86,10 +89,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/home/paihangbang",
-					"pathName": "pages/home/paihangb/paihangb",
-					"query": "",
+					"id": 3,
+					"name": "pages/home/content/detail/detail",
+					"pathName": "pages/home/content/detail/detail",
+					"query": "id=1",
 					"scene": null
 				},
 				{
@@ -117,6 +120,7 @@
 					"id": -1,
 					"name": "pages/home/content/content",
 					"pathName": "pages/home/content/content",
+					"query": "",
 					"scene": null
 				}
 			]
