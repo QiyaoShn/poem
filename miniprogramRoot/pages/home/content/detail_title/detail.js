@@ -3,6 +3,7 @@ const recorderManager = wx.getRecorderManager() //录音对象
 const innerAudioContext = wx.createInnerAudioContext() //播放对象
 const db = wx.cloud.database({});
 const cont = db.collection('poem');
+
 Page({
 
   /**
@@ -15,7 +16,8 @@ Page({
       isshoucang:false,
       bofangurl:' ',//播放路径
       subject: [],
-      rec: true
+      rec: true,
+    
   },
 
   notfound(){
@@ -91,9 +93,8 @@ Page({
           times: i
         })
     }
-      
   },
-  
+    
   begin:function(e){
     var that=this;
     that.setData({

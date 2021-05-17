@@ -3,6 +3,7 @@ const recorderManager = wx.getRecorderManager() //录音对象
 const innerAudioContext = wx.createInnerAudioContext() //播放对象
 const db = wx.cloud.database({});
 const cont = db.collection('poem');
+const audioo = wx.createInnerAudioContext()
 Page({
 
   /**
@@ -15,9 +16,10 @@ Page({
       isshoucang:false,
       bofangurl:' ',//播放路径
       subject: [],
-      rec: true
+      rec: true,
+      check:true,
   },
-
+  
   notfound(){
     console.log("404")
     wx.showModal({
@@ -88,18 +90,28 @@ Page({
     wx.setNavigationBarTitle({ 
       title: "ID: "+options.id + " 详情" 
     }); 
+
     
-      
   },
-  
-  yinping:function(e){
-    var audio = wx.createInnerAudioContext()
-    audio.src = "cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4"
-    audio.play()
+  click1:function(){
+    this.yinping();
+    console.log(this.data.check)
+    this.setData({
+      check:false
+    })
   },
-  stop: function (e) {
-    innerAudioContext.pause();
-  } ,
+ yinping:function(e){
+   
+   audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3"
+   audioo.play()
+ },
+ ZanTing:function(e){
+  audioo.pause()
+  console.log("暂停")
+  this.setData({
+    check:true
+  })
+ },
   begin:function(e){
     var that=this;
     that.setData({
@@ -194,6 +206,7 @@ Page({
     }
     });
   },
+  
   //播放录音
   bofang:function(e){
     var that = this;
