@@ -122,6 +122,13 @@
 					"pathName": "pages/home/content/content",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "cloudfunctionRoot/cloud",
+					"pathName": "cloudfunctionRoot/cloud",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

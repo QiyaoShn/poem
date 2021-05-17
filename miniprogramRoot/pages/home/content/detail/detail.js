@@ -2,23 +2,7 @@
 const recorderManager = wx.getRecorderManager() //录音对象
 const innerAudioContext = wx.createInnerAudioContext() //播放对象
 const db = wx.cloud.database({});
-const MAX_LIMIT = 20
-const cont = db.collection('poem').count().then(async res =>{
-  let total = res.total;
-  // 计算需分几次取
-  const batchTimes = Math.ceil(total / MAX_LIMIT)
-  // 承载所有读操作的 promise 的数组
-  for (let i = 0; i < batchTimes; i++) {
-    await db.collection('poem').skip(i * MAX_LIMIT).limit(MAX_LIMIT).get().then(async res => {
-      let new_data = res.data
-      let old_data = that.data.allRecords
-      that.setData({
-        allRecords : old_data.concat(new_data)
-      })
-    })
-  }
-  console.log(that.data.allRecords[0])
-})
+const cont = db.collection('poem');
 Page({
 
   /**
