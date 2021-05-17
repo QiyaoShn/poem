@@ -7,9 +7,9 @@
 				<view  class="shoucang-position">
 					<view catchtap="shoucang" class="iconfont .icon-shoucang1 shoucang-style" data-index="{{index}}"></view>
 					<view class="iconfont .icon-print da-yin"></view>
-					<view class="laba-1">
+					<view  class="laba-1" catchtap="yinping" >
 						<text style="font-weight: 900;font-size:40rpx">{{item.bbs_title}}</text>
-						<view class="iconfont .icon-horn laba-2"></view>
+						<view class="iconfont .icon-horn laba-2" catchtap="stop"></view>
 					</view>
 				</view>
 			

@@ -92,6 +92,14 @@ Page({
       
   },
   
+  yinping:function(e){
+    var audio = wx.createInnerAudioContext()
+    audio.src = "cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4"
+    audio.play()
+  },
+  stop: function (e) {
+    innerAudioContext.pause();
+  } ,
   begin:function(e){
     var that=this;
     that.setData({
