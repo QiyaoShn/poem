@@ -1,0 +1,9 @@
+<!--miniprogramRoot/pages/about/photo/photo.wxml-->
+<camera flash="off" style="width: 100%; height: 450px;"></camera>
+<view class="btn-area">
+  <button type="primary" bindtap="startRecord">开始录像</button>
+</view>
+<view class="btn-area">
+  <button type="primary" bindtap="stopRecord">结束录像</button>
+</view>
+<video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>

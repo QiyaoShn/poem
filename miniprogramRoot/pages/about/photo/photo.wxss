@@ -1,0 +1,16 @@
+/* miniprogramRoot/pages/about/photo/photo.wxss *//* pages/photo/photo.wxss */
+.camera{
+  width: 20vw;
+  height: 20vh;
+}
+.btn-area{
+  margin-top: 20rpx;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+

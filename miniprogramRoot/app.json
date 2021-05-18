@@ -15,7 +15,8 @@
     "pages/my/setup/weare/weare",
     "pages/my/setup/ziliao/ziliao",
     "pages/my/setup/fankui/fankui",
-    "pages/about/vedio/vedio"
+    "pages/about/vedio/vedio",
+    "pages/about/photo/photo"
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",

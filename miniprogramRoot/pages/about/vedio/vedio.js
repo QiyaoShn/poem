@@ -20,7 +20,9 @@ Page({
     });
   },
   photo:function(){
-
+      wx.navigateTo({
+        url: '/pages/about/photo/photo',	//跳转到自定义的一个拍照页面
+    })
   },
 
 
