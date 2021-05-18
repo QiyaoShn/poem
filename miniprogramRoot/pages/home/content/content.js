@@ -21,7 +21,7 @@ Page({
 
   recite(e){
     var id = e.currentTarget.dataset.id
-     
+    
      for (let i = 1; i < this.data.catalog.length; ++i){
           if(i == id){
             if(this.data.catalog[1].isRecite == true){
@@ -60,11 +60,11 @@ Page({
         })
       }
     })
-      if(options.classic)
+      if(options.id)
       {
-        console.log(options.classic)
+        console.log(options.id)
         wx.setNavigationBarTitle({
-          title: options.classic
+          title: this.data.catalog[options.id].bbs_title
         })
       }
       else

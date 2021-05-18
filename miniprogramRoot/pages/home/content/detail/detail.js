@@ -74,7 +74,7 @@ Page({
         })
         for (let i = 0; i < this.data.subject.length; i++) {
           if(this.data.subject[i].id == options.id)
-          {
+          {this.data.subject[options.id].id
             console.log("yes")
             this.setData({
               detail_id: options.id

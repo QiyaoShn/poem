@@ -1,136 +1,139 @@
 {
-	"description": "项目配置文件",
-	"cloudfunctionRoot": "cloudfunctionRoot/",
-	"miniprogramRoot": "miniprogramRoot/",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": false,
-		"enhance": false,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": false,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.11.1",
-	"appid": "wx0037ff030af913a6",
-	"projectname": "%E5%8F%A4%E8%AF%97",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": 0,
-					"name": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
-					"pathName": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/about/vedio/vedio",
-					"pathName": "pages/about/vedio/vedio",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/find/find",
-					"pathName": "pages/home/find/find",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "pages/home/content/detail/detail",
-					"pathName": "pages/home/content/detail/detail",
-					"query": "id=1",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/home",
-					"pathName": "pages/home/home",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/about/vedio/vedio",
-					"pathName": "pages/about/vedio/vedio",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/class/class",
-					"pathName": "pages/home/class/class",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/content/content",
-					"pathName": "pages/home/content/content",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 8,
-					"name": "cloudfunctionRoot/cloud",
-					"pathName": "cloudfunctionRoot/cloud",
-					"query": "",
-					"scene": null
-				}
-			]
-		}
-	}
+  "description": "项目配置文件",
+  "cloudfunctionRoot": "cloudfunctionRoot/",
+  "miniprogramRoot": "miniprogramRoot/",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": false,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "useApiHostProcess": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.11.1",
+  "appid": "wx0037ff030af913a6",
+  "projectname": "%E5%8F%A4%E8%AF%97",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
+          "pathName": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about/vedio/vedio",
+          "pathName": "pages/about/vedio/vedio",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/find/find",
+          "pathName": "pages/home/find/find",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/home/content/detail/detail",
+          "pathName": "pages/home/content/detail/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about/vedio/vedio",
+          "pathName": "pages/about/vedio/vedio",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/class/class",
+          "pathName": "pages/home/class/class",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/content/content",
+          "pathName": "pages/home/content/content",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "cloudfunctionRoot/cloud",
+          "pathName": "cloudfunctionRoot/cloud",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }
