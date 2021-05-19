@@ -1,6 +1,12 @@
 /* miniprogramRoot/pages/home/content/shibie/shibie.wxss */
 /* pages/yuyin/yuyin.wxss */
- 
+ .quanju{
+  background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fstatic.ijtoo.com%2Fijdata%2Fimg%2F04%2F54003511%2F1_02.jpg&refer=http%3A%2F%2Fstatic.ijtoo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624019555&t=a7af76b9495458e6365ec1b2932d729a");
+  height: 100%;
+  width : 100%;
+  position: absolute;
+    box-sizing: border-box;
+ }
 .yuyinWrap {
   position: relative;
   margin-top:300rpx;

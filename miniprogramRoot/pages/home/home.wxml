@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <!--第一部分zz编辑-->
-<view>
+<view class="beijing" >
 	<swiper style="height: 30vh;" indicator-dots="{{true}}" current="{{frist}}">
 		<swiper-item class="shi-tu1">
 			<text class="shi-title">每日一诗</text>
@@ -20,13 +20,14 @@
 		</swiper-item>
 
 	</swiper>
-</view>
+
 <!--分割线，方便修改-->
+<view>
 <view class="kuaijie-position">
 	<navigator  wx:for="{{kuaijie}}" wx:for-item="kuaijie" data-code="{{kuaijie.codes}}" data-type="kuaijie" wx:key="codes" url="{{kuaijie.urlTo}}" class="{{kuaijie.image}}"><text class="kuaijie-word">{{kuaijie.name}}</text></navigator>
 </view>
 <!--分割线，方便修改-->
-<view class="item-position">
+
 	<view class="item-style" wx:for="{{listGushi}}" wx:for-item="listGushi" data-code="{{listGushi.listCode}}" data-type="listGushi" wx:key="listCode" bindtap="to_content">
 		<view class="item-barStyle"></view>
 		<view class="item-body">
@@ -43,4 +44,5 @@
 			<text class="item-word2">{{listGuwen.listExample}}</text>
 		</view>
 	</view>
+</view>
 </view>

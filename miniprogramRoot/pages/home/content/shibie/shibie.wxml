@@ -1,4 +1,6 @@
 <!--miniprogramRoot/pages/home/content/shibie/shibie.wxml-->
+<page-meta>
+<view class="quanju">
 <view class="yuyinWrap">
   <textarea class='yuyinCon' placeholder='请输入内容' value='{{content}}'></textarea>
   <!--  -->
@@ -13,3 +15,5 @@
     <cover-view>开始语音</cover-view>
   </cover-view>
 </view>
+</view>
+</page-meta>

@@ -65,8 +65,8 @@
   justify-content: space-around;
   width: 375px;
   height: 140rpx;
-  background-color: #F2F4F4;
   align-items:center;
+ border-bottom:  #000000;
 }
 .kuaijie-every{
   display: flex;
@@ -88,6 +88,7 @@
   position: relative;
   margin-left: 65rpx;
   padding: 30rpx;
+  margin-top: 20rpx;
 }
 .item-barStyle:before {
     content: " ";
@@ -123,6 +124,9 @@
   margin-top: -30rpx;
 }
 .item-position{
-  width: 100%;
-  margin-top:25px;
+  margin-top:0px;
 }
+.beijing{
+  background: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.huabanimg.com%2F6548c76cbdb1ee0360c36ff7d954b806a62890f866122-SD7BEU_fw658&refer=http%3A%2F%2Fhbimg.huabanimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624014108&t=7e90d524cb39a1c66d71954b209574e4");
+}
+

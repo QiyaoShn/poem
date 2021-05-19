@@ -4,17 +4,17 @@
 		<view wx:if="{{item.id == detail_id}}" class="gushi-page">
 		<view class="buchong"></view>
 			<view class="gushi {{showTrue?'isShow':'isHide'}}">
-				<view  class="shoucang-position">
+				<view  class="shoucang-position ">
 					<view catchtap="shoucang" class="iconfont .icon-shoucang1 shoucang-style" data-index="{{index}}"></view>
-					<view class="iconfont .icon-print da-yin"></view>
-					<view  class="laba-1" catchtap="click1">
-						<text style="font-weight: 900;font-size:40rpx;margin-left:70rpx">{{item.bbs_title}}</text>
-						<view class="iconfont .icon-horn laba-2"  ></view>
-							<view class="iconfont .icon-horn laba-0" catchtap="ZanTing" ></view>
+					<view class="iconfont .icon-print da-yin" ></view>
+					<view  class="laba-1 " bindtouchstart="yinping" bindtouchend="ZanTing">
+						<text style="font-weight: 900;font-size:40rpx;margin-left:70rpx;margin-top:30rpx">{{item.bbs_title}}</text>
+						<view class="iconfont .icon-horn laba-2 "  bindtouchstart="yinping" bindtouchend="ZanTing"></view>
+							
 					</view>
 				</view>
 			
-				<text style="margin: 10rpx 0;margin-top: 30rpx;font-size:28rpx">{{item.bbs_author}}</text>
+				<text style="margin: 10rpx 0;margin-top: 40rpx;font-size:28rpx ">{{item.bbs_author}}</text>
 				<text style="margin-top: 45rpx;margin-left:93rpx;margin-right:90rpx;font-size:37rpx">{{item.bbs_content}}</text>
 				<view class="gushi_detail">
 					<text style="margin-top: 50rpx; font-weight: 900">◔译文和注释：</text><text style=" margin-bottom: 30rpx">{{item.bbs_memo}}</text>
@@ -25,7 +25,7 @@
 			</view>
 			<view class="button-position">
 				<view class="button-style">
-					<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="shibie"></image><text class="button-word2">识别</text>
+					<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="shibie"></image><text class="button-word2">AI识别</text>
 				</view>
 				<view wx:if="{{rec}}" class="button-style">
 					<image catchtap="begin" class="luyin iconfont .icon-luyin"></image><text class="button-word1">我要背诵</text>

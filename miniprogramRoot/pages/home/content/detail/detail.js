@@ -94,14 +94,15 @@ Page({
     
   },
   click1:function(){
-    this.yinping();
-    console.log(this.data.check)
+    if (this.check==true) {
+      this.yinping();
+      console.log(this.data.check)
+    }
     this.setData({
       check:false
     })
   },
  yinping:function(e){
-   
    audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3"
    audioo.play()
  },
@@ -150,6 +151,7 @@ Page({
     recorderManager.onError((res) => {
       console.log(res);
     })
+
   },
 
   //停止录音

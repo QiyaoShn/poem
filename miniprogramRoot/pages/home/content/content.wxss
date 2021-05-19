@@ -1,15 +1,25 @@
+.beijing{
+  background: url("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=291749314,3466126473&fm=26&gp=0.jpg");
+  margin-top: -10rpx;
+    width : 100%;
+    height : 100%;
+    box-sizing: border-box;
+}
 .every{
   position: relative;
+  
 }
 
 .canvas{
-  border-bottom: 1px #dcdcdc solid;
+  border-bottom: 2px #dcdcdc solid;
   font-size: 14px;
   font-weight: 300;
+  
 }
 
 .recite{
   position: absolute;
   left: 680rpx;
   top: 8rpx;
+  
 }

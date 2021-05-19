@@ -13,6 +13,9 @@ Page({
         console.log('startRecord')
       }
     })
+    wx.showToast({
+      title: '开始录制',
+    })
   },
   stopRecord() {
     this.ctx.stopRecord({
@@ -22,6 +25,9 @@ Page({
           videoSrc: res.tempVideoPath
         })
       }
+    })
+    wx.showToast({
+      title: '录制结束',
     })
   },
   onLoad: function (options) {
