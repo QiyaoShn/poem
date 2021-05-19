@@ -1,7 +1,7 @@
 /* miniprogramRoot/pages/home/content/shibie/shibie.wxss */
 /* pages/yuyin/yuyin.wxss */
  .quanju{
-  background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fstatic.ijtoo.com%2Fijdata%2Fimg%2F04%2F54003511%2F1_02.jpg&refer=http%3A%2F%2Fstatic.ijtoo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624019555&t=a7af76b9495458e6365ec1b2932d729a");
+  background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.yipic.cn%2Fthumb%2Fdbad4b50%2F854790aa%2Fe957942b%2Fda4d5de8%2Fbig_dbad4b50854790aae957942bda4d5de8.png%3Fx-oss-process%3Dimage%2Fformat%2Cwebp%2Fsharpen%2C100&refer=http%3A%2F%2Fimg.yipic.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624018649&t=86cc1fe44b7e6fd98ef33edc1dffcc5f");
   height: 100%;
   width : 100%;
   position: absolute;

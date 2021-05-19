@@ -60,14 +60,15 @@
 }
 /*zz分割线*/
 .kuaijie-position{
+  border-bottom: 0.5px #DCDCDC solid;
   color: #035BA6;
   display: flex;
   justify-content: space-around;
   width: 375px;
   height: 140rpx;
   align-items:center;
- border-bottom:  #000000;
 }
+
 .kuaijie-every{
   display: flex;
   flex-direction: column;
@@ -77,6 +78,7 @@
   right: 14rpx;
   height: 50px;
   width: 50px;
+  
 }
 .kuaijie-word{
   font-size:12px;

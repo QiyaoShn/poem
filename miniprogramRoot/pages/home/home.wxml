@@ -22,7 +22,7 @@
 	</swiper>
 
 <!--分割线，方便修改-->
-<view>
+<view class="fenge">
 <view class="kuaijie-position">
 	<navigator  wx:for="{{kuaijie}}" wx:for-item="kuaijie" data-code="{{kuaijie.codes}}" data-type="kuaijie" wx:key="codes" url="{{kuaijie.urlTo}}" class="{{kuaijie.image}}"><text class="kuaijie-word">{{kuaijie.name}}</text></navigator>
 </view>

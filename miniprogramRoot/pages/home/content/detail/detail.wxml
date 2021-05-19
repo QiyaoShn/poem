@@ -8,7 +8,7 @@
 					<view catchtap="shoucang" class="iconfont .icon-shoucang1 shoucang-style" data-index="{{index}}"></view>
 					<view class="iconfont .icon-print da-yin" ></view>
 					<view  class="laba-1 " bindtouchstart="yinping" bindtouchend="ZanTing">
-						<text style="font-weight: 900;font-size:40rpx;margin-left:70rpx;margin-top:30rpx">{{item.bbs_title}}</text>
+						<text style="font-weight: 900;font-size:40rpx;margin-left:10rpx;margin-top:30rpx">{{item.bbs_title}}</text>
 						<view class="iconfont .icon-horn laba-2 "  bindtouchstart="yinping" bindtouchend="ZanTing"></view>
 							
 					</view>
@@ -18,9 +18,9 @@
 				<text style="margin-top: 45rpx;margin-left:93rpx;margin-right:90rpx;font-size:37rpx">{{item.bbs_content}}</text>
 				<view class="gushi_detail">
 					<text style="margin-top: 50rpx; font-weight: 900">◔译文和注释：</text><text style=" margin-bottom: 30rpx">{{item.bbs_memo}}</text>
-					<text style="font-weight: 600;">◑赏析：</text><text></text>
-					<text style="font-weight: 600; margin-top: 30rpx;">◕背景：</text><text style=""></text>
-					<text style="font-weight: 600; margin-top: 30rpx">◉作者简介：</text><text></text>
+					<text style="font-weight: 600;">◑赏析：</text><text>{{item.bbs_shangxi}}</text>
+					<text style="font-weight: 600; margin-top: 30rpx;">◕背景：</text><text >{{item.bbs_beijing}}</text>
+					<text style="font-weight: 600; margin-top: 30rpx">◉作者简介：</text><text>{{item.bbs_zuozhe}}</text>
 				</view>
 			</view>
 			<view class="button-position">

@@ -236,7 +236,7 @@ Page({
       console.log('播放录音失败')
     })
    },
-   shoucang:function (e) {
+   /*shoucang:function (e) {
      var Index = e.currentTarget.dataset.index;
      var missionArr = this.data.subject;
      for(let i in missionArr){
@@ -252,7 +252,7 @@ Page({
      wx.showToast({
        title: '已收藏',
      })
-   },
+   },*/
    quxiaoShoucang:function(e){
     var Index = e.currentTarget.dataset.index;
     var missionArr = this.data.subject;
