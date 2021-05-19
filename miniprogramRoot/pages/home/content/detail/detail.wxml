@@ -25,10 +25,10 @@
 			</view>
 			<view class="button-position">
 				<view class="button-style">
-					<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="stop"></image><text class="button-word2">背诵结束</text>
+					<image class="{{isChecked2? 'stop iconfont .icon-zanting':'stopChange iconfont .icon-zanting'}}" catchtap="shibie"></image><text class="button-word2">识别</text>
 				</view>
 				<view wx:if="{{rec}}" class="button-style">
-					<image catchtap="begin" class="luyin iconfont .icon-luyin"></image><text class="button-word1">开始背诵</text>
+					<image catchtap="begin" class="luyin iconfont .icon-luyin"></image><text class="button-word1">我要背诵</text>
 				</view>
 				<view wx:else class="button-style">
 					<image src="/images/recording.gif" class="luyin" catchtap="stop"></image>

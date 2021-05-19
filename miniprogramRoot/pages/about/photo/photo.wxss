@@ -4,7 +4,7 @@
   height: 20vh;
 }
 .btn-area{
-  margin-top: 20rpx;
+  margin-top: 21rpx;
   color: white;
   border-radius: 98rpx;
   display: flex;

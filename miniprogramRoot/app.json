@@ -16,12 +16,19 @@
     "pages/my/setup/ziliao/ziliao",
     "pages/my/setup/fankui/fankui",
     "pages/about/vedio/vedio",
-    "pages/about/photo/photo"
+    "pages/about/photo/photo",
+    "pages/home/content/shibie/shibie"
   ],
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "背古诗助手"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.0",
+      "provider": "wx069ba97219f66d99"
+    }
   },
   "sitemapLocation": "sitemap36.json",
   "tabBar": {

@@ -207,6 +207,11 @@ Page({
     });
   },
   
+  shibie:function(e){
+    wx.navigateTo({
+      url: '/pages/home/content/shibie/shibie',	//跳转到自定义的一个拍照页面
+    })
+  },
   //播放录音
   bofang:function(e){
     var that = this;

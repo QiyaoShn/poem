@@ -9,7 +9,7 @@
 </view>
 <view  wx:if="{{selectType=='1'}}">
        <myview id="myvedio"usearname=""title="风雨" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
-      <myview id="myvedio"usearname="ACE"title="诗歌2" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+      <myview id="myvedio"usearname="ACE"title="诗歌" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
 </view>
 
 <view  wx:if="{{selectType=='2'}}">
