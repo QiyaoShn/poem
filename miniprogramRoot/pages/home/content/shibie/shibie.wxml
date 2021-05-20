@@ -4,9 +4,9 @@
 <view class="yuyinWrap">
   <textarea class='yuyinCon' placeholder='请输入内容' value='{{content}}'></textarea>
   <!--  -->
-  <view class=''>
-    <button class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
-      <text wx:if="{{recordState == false}}">按住 说话</text>
+  <view>
+    <button class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" bindtouchstart="touchStart" bindtouchend="touchEnd" class="shuohua">
+      <text wx:if="{{recordState == false}}" class="shuohua">按住 说话</text>
       <text wx:else>松开 结束</text>
     </button>
   </view>
@@ -17,3 +17,5 @@
 </view>
 </view>
 </page-meta>
+
+

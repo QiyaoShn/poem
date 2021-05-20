@@ -50,7 +50,7 @@
 }
  
 .yuyinBtn {
-  width: 70%;
+  width: 70rpx;
   height: 70rpx;
   position: absolute;
   right: 112rpx;
@@ -92,4 +92,9 @@
  
 .startYuyinImage cover-view {
   margin-top: 25rpx;
+}
+
+.shuohua{
+  border-radius: 50rpx;
+  color: green;
 }
