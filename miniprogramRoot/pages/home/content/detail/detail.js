@@ -17,7 +17,7 @@ Page({
       bofangurl:' ',//播放路径
       subject: [],
       rec: true,
-      check:true,
+      
   },
   
   notfound(){
@@ -93,25 +93,18 @@ Page({
 
     
   },
-  click1:function(){
-    if (this.check==true) {
-      this.yinping();
-      console.log(this.data.check)
-    }
-    this.setData({
-      check:false
-    })
-  },
+
  yinping:function(e){
-   audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3"
-   audioo.play()
+  audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3";
+  
+    audioo.play();
+    wx.showToast({
+      title: '长摁播放',
+    })
  },
  ZanTing:function(e){
-  audioo.pause()
-  console.log("暂停")
-  this.setData({
-    check:true
-  })
+  audioo.pause();
+  console.log("暂停");
  },
   begin:function(e){
     var that=this;

@@ -9,7 +9,7 @@
  }
 .yuyinWrap {
   position: relative;
-  margin-top:300rpx;
+  margin-top:260rpx;
 }
  
 .yuyinCon {
@@ -97,4 +97,7 @@
 .shuohua{
   border-radius: 50rpx;
   color: green;
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
 }

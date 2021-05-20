@@ -1,0 +1,86 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
+          "pathName": "pages/cloudfunctionVSdatabaseAPI/cloudfunctionVSdatabaseAPI",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about/vedio/vedio",
+          "pathName": "pages/about/vedio/vedio",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/find/find",
+          "pathName": "pages/home/find/find",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/home/content/detail/detail",
+          "pathName": "pages/home/content/detail/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about/vedio/vedio",
+          "pathName": "pages/about/vedio/vedio",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/class/class",
+          "pathName": "pages/home/class/class",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/content/content",
+          "pathName": "pages/home/content/content",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "cloudfunctionRoot/cloud",
+          "pathName": "cloudfunctionRoot/cloud",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/content/shibie/shibie",
+          "pathName": "pages/home/content/shibie/shibie",
+          "query": "id=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

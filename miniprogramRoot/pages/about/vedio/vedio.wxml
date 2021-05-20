@@ -8,21 +8,26 @@
       <view class="iconfont .icon-weibiaoti1 photo" bindtap="photo"></view>
 </view>
 <view  wx:if="{{selectType=='1'}}">
-       <myview id="myvedio"usearname=""title="风雨" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
-      <myview id="myvedio"usearname="ACE"title="诗歌" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+       <myview id="myvedio"usearname="部分视频来源于哔哩哔哩和百度百科，侵删"title="风雨" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+      <myview id="myvedio"usearname="出塞" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/出塞.mp4">  </myview>
+      <myview id="myvedio"usearname="木兰诗" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/木兰诗.mp4">  </myview>
+      <myview id="myvedio"usearname="逢雪宿芙蓉山主人" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/逢雪宿芙蓉山主人.mp4">  </myview>
+      <myview id="myvedio"usearname="江南" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/江南.mp4">  </myview>
+      <myview id="myvedio"usearname="凉州词" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/凉州词.mp4">  </myview>
+   
 </view>
 
 <view  wx:if="{{selectType=='2'}}">
-      <myview id="myvedio"usearname="ACE"title="人生得意须尽欢，莫使金樽空对月" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
-      <myview id="myvedio"usearname="ACE"title="【赏析：元稹这首《行宫》是一首抒发盛衰之感的诗，这首短小精悍的五绝具有深邃的意境，富有隽永的诗味，倾诉了宫女无穷的哀怨之情，寄托了诗人深沉的盛衰之感。】" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+      <myview id="myvedio"usearname="推荐"title="汤圆" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/汤圆.mp4">  </myview>
+      <myview id="myvedio"usearname=""title="" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/趣味.mp4">  </myview>
 </view>
 
 <view  wx:if="{{selectType=='3'}}">
-       <myview id="myvedio"usearname="ACE"title="莫使金樽空对月" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
-      <myview id="myvedio"usearname="ACE"title="【赏析：元稹这首《行宫》是一首抒发盛衰之感的诗，这首短小精悍的五绝具有深邃的意境，富有隽永的诗味" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+       <myview id="myvedio"usearname="收藏"title="绝句" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/绝句.mp4">  </myview>
+      <myview id="myvedio"usearname=""title="长歌行" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/长歌行.mp4">  </myview>
 </view>
 
 <view  wx:if="{{selectType=='4'}}">
-       <myview id="myvedio"usearname="ACE"title="人生欢，莫月" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
-      <myview id="myvedio"usearname="ACE"title="【赏析：，倾诉了宫女无穷的哀怨之情，寄托了。】" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/test.mp4">  </myview>
+       <myview id="myvedio"usearname="我的"title="登鹳雀楼" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/登鹳雀楼.mp4">  </myview>
+      <myview id="myvedio"usearname=""title="早春" vedio="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/早春.mp4">  </myview>
 </view>
