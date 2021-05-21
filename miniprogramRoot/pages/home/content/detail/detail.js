@@ -58,6 +58,9 @@ Page({
    */
   
   onLoad: function (options) {
+    wx.setNavigationBarTitle({ 
+      title: "ID: "+options.id+ " 详情" 
+    })
     var _this = this;
     //1、引用数据库   
     const db = wx.cloud.database({  
@@ -65,6 +68,7 @@ Page({
     });
     //2、开始查询数据了  news对应的是集合的名称   
     db.collection('poem').get({
+      
       //如果查询成功的话    
       success: res => {
         console.log(res.data)
@@ -72,6 +76,7 @@ Page({
         this.setData({
           subject: res.data
         })
+       
         for (let i = 0; i < this.data.subject.length; i++) {
           if(this.data.subject[i].id == options.id)
           {this.data.subject[options.id].id
@@ -85,12 +90,10 @@ Page({
             times: i
           })
       }
+      
       }
+      
     });
-    wx.setNavigationBarTitle({ 
-      title: "ID: "+options.id + " 详情" 
-    }); 
-
     
   },
 

@@ -8,8 +8,8 @@
 		<view class="title">
 			<text>{{title}}</text>
 		</view>
-		<view class="content">
-			<video class="vedio" objectFit="fill" src="{{vedio}}"></video>
+		<view >
+			<image class="image" objectFit="fill" src="{{image}}"></image>
 		</view>
 	</view>
 </view>

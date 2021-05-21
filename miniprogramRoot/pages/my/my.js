@@ -18,27 +18,17 @@ console.log('onLoad 页面加载');
 console.log(this)
 
 //判断用户是否授权
-
-wx.getSetting({
-  success:(data)=>{
-    console.log(data);
-    if(data.authSetting['scope.userInfo']){
-      //用户已经授权
-     this.setData({
-       isShow:false
-     });
-    }else{
-      //没有授权
-      this.setData({
-        isShow:true
-      });
+  wx.login({
+    success:function(res){
+      console.log(res.code)
+      //发送请求
     }
-  }
-})
-//获取用户信息
+  })
+},
+/*//获取用户信息
 wx.getUserInfo({
   success: (data) => {
-    console.log(data);
+    console.log(res.data);
   //更新data中ueserInfo
   this.setData({
     userInfo:data.userInfo
@@ -55,7 +45,7 @@ handleGetUserInfo(data){
      }
    },
    
-  
+  */ //微信关闭wx.getUserInfo接口
     data: {
      
       multiArray: [['小学', '初中','高中'], ['一年级', '二年级', '三年级', '四年级', '五年级','六年级']],

@@ -1,6 +1,6 @@
 
 page{
-  background-color: #7ccbff
+  background-color: #46AEF0
 }
 .page{
   position: absolute;

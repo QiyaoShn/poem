@@ -1,24 +1,15 @@
-const audioo = wx.createInnerAudioContext()
+const app = getApp()
 Page({
-  data:{
-    check:true,
+  data: {
+    
   },
-  click1:function(){
-    this.yinping();
-    console.log(this.data.check)
-    this.setData({
-      check:false
-    })
-  },
- yinping:function(e){
-   
-   audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3"
-   audioo.play()
- },
- stop:function(e){
-  audioo.pause()
-  this.setData({
-    check:true
-  })
- }
- })
+  //登录获取code
+  onLoad:function(){
+    wx.login({
+      success(res){
+      console.log(res.code)
+      }
+      })
+  }
+  
+})

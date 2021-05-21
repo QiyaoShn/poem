@@ -3,7 +3,7 @@ const recorderManager = wx.getRecorderManager() //录音对象
 const innerAudioContext = wx.createInnerAudioContext() //播放对象
 const db = wx.cloud.database({});
 const cont = db.collection('poem');
-
+const audioo = wx.createInnerAudioContext()
 Page({
 
   /**
@@ -17,9 +17,9 @@ Page({
       bofangurl:' ',//播放路径
       subject: [],
       rec: true,
-    
+      
   },
-
+  
   notfound(){
     console.log("404")
     wx.showModal({
@@ -58,11 +58,14 @@ Page({
    */
   
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: ' ',
+    })
     var _this = this;
     //1、引用数据库   
     const db = wx.cloud.database({  
       env: 'asd-8i5n5'
-    })
+    });
     //2、开始查询数据了  news对应的是集合的名称   
     db.collection('poem').get({
       //如果查询成功的话    
@@ -72,29 +75,39 @@ Page({
         this.setData({
           subject: res.data
         })
+        
+        for (let i = 0; i < this.data.subject.length; i++) {
+          if(this.data.subject[i].id == options.id)
+          {this.data.subject[options.id].id
+            console.log("yes")
+            this.setData({
+              detail_id: options.id
+            })
+            return
+          }
+          this.setData({
+            times: i
+          })
       }
-    })
+      }
+    });
     wx.setNavigationBarTitle({ 
       title: "ID: "+options.id + " 详情" 
-    }) 
-    for (let i = 1; i < this.data.subject.length; ++i) {
-        console.log("this.data.subject.length[i].id")
-        if(this.data.subject.length[i].id == options.id)
-        {
-          console.log("yes")
-          this.setData({
-            detail_id: options.id
-          })
-          return
-        }else{
-          console.log("no")
-        }
-        this.setData({
-          times: i
-        })
-    }
+    });
   },
-    
+
+ yinping:function(e){
+  audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3";
+  
+    audioo.play();
+    wx.showToast({
+      title: '长摁播放',
+    })
+ },
+ ZanTing:function(e){
+  audioo.pause();
+  console.log("暂停");
+ },
   begin:function(e){
     var that=this;
     that.setData({
@@ -133,6 +146,7 @@ Page({
     recorderManager.onError((res) => {
       console.log(res);
     })
+
   },
 
   //停止录音
@@ -189,6 +203,12 @@ Page({
     }
     });
   },
+  
+  shibie:function(e){
+    wx.navigateTo({
+      url: '/pages/home/content/shibie/shibie',	//跳转到自定义的一个拍照页面
+    })
+  },
   //播放录音
   bofang:function(e){
     var that = this;
@@ -211,7 +231,7 @@ Page({
       console.log('播放录音失败')
     })
    },
-   shoucang:function (e) {
+   /*shoucang:function (e) {
      var Index = e.currentTarget.dataset.index;
      var missionArr = this.data.subject;
      for(let i in missionArr){
@@ -227,7 +247,7 @@ Page({
      wx.showToast({
        title: '已收藏',
      })
-   },
+   },*/
    quxiaoShoucang:function(e){
     var Index = e.currentTarget.dataset.index;
     var missionArr = this.data.subject;

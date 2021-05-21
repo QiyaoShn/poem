@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -78,6 +79,29 @@
           "name": "pages/home/content/shibie/shibie",
           "pathName": "pages/home/content/shibie/shibie",
           "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/data/data",
+          "pathName": "pages/data/data",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/paihangb/paihangb",
+          "pathName": "pages/home/paihangb/paihangb",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/find/find",
+          "pathName": "pages/home/find/find",
           "scene": null
         }
       ]

@@ -10,7 +10,7 @@ Component({
       title:{
         type:String
     },
-      vedio:{
+      image:{
         type:String
       }
 

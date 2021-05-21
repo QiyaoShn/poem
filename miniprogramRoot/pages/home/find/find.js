@@ -1,59 +1,47 @@
 var app=getApp();
-var searchValue='';
+const db = wx.cloud.database({});
+const cont = db.collection('poem');
+var searchValue=''; 
+var title='';
 Page({
   data:{
     inputShow:true,
     searchValue:'',
-
-    catalog: [
-      {
-          title: "观刈麦",
-          author: "白居易",
-          dynasty: "[唐]",
-          id: 1,
-          isRecite: true
-      },
-      {
-        title: "夜雨寄北",
-        author: "李商隐",
-        dynasty: "[晚唐]",
-        id: 2,
-        isRecite: true
-     },
-    {
-      title: "春望",
-      author: "杜甫",
-      dynasty: "[唐]",
-      id: 3,
-      isrecite: false
-    },
-    {
-      title: "游山西村",
-      author: "陆游",
-      dynasty: "[北宋]",
-      id: 4,
-      isrecite: false
-   }
-    ]
+    catalog: []
   },
   onLoad: function(e){
     console.log(e.wh) 
     this.setData({
       which: e.wh
     })
+    var _this = this;
+    //1、引用数据库   
+    const db = wx.cloud.database({  
+      env: 'asd-8i5n5'
+    });
+    //2、开始查询数据了  news对应的是集合的名称   
+    db.collection('poem').get({
+      //如果查询成功的话    
+      success: res => {
+        console.log(res.data)
+        //赋值，没有这一步的话，前台就不会显示值      
+        this.setData({
+          catalog: res.data,
+        })
+      }
+    });
   },
   searchValueInput:function(e){
-    var value=e.detail.value;
+    var  value = e.detail.value
     this.setData({
       searchValue:value,
     })
-    console.log(searchValue);
   },
   sousuoId:function(event){
     var shiId = event.currentTarget.dataset.shiId
-     console.log(shiId);
+    console.log(shiId)
     wx.navigateTo({
-      url: '/pages/home/content/detail_title/detail?id=' + shiId,
+      url: '/pages/home/content/detail/detail?id='+shiId,
     })
   },
   tocontent(e){
@@ -66,7 +54,7 @@ Page({
     var that = this;
     setTimeout(function () {
       that.setData({
-        searchValue:' '
+        searchValue:''
       })
     },100)
   }

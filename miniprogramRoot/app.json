@@ -22,7 +22,7 @@
   "window": {
     "navigationBarBackgroundColor": "#46AEF0",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "背古诗助手"
+    "navigationBarTitleText": "风雅诵"
   },
   "plugins": {
     "WechatSI": {

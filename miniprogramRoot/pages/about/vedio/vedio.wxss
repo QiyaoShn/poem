@@ -3,6 +3,7 @@
   height: 50px;
   overflow: hidden;
 }
+
 .head input{
   width: 80%;
   background-color: #fff;

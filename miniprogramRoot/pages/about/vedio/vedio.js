@@ -6,10 +6,10 @@ Page({
    */
   data: {
    topBars:[
-     {id: 1,name:"关注"},
-     {id: 2,name:"推荐"},
-     {id: 3,name:"收藏"},
-     {id: 4,name:"我的"}
+     {id: 1,name:"图文诗词"},
+     {id: 2,name:"趣味成语"},
+     {id: 3,name:"经典书籍"},
+     {id: 4,name:""}
     ],
      selectType: 1,
   },

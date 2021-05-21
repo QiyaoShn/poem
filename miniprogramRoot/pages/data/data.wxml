@@ -10,9 +10,9 @@
 
 
 <view class="background2"  wx:if="{{selectType=='1'}}">
-<image class="shuju" src="/images/数据2.png"></image>
+<image class="shuju" src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/数据2.png"></image>
 </view>
 <view class="background2"  wx:if="{{selectType=='2'}}">
-<image class="shuju" src="/images/数据1.png"></image>
+<image class="shuju" src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/数据1.png"></image>
 </view>
 

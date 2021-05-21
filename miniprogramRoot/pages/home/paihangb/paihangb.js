@@ -18,6 +18,12 @@ Page({
    */
   onLoad: function (options) {
     this.getData()
+    wx.login({
+      success:function(res){
+        console.log(res.code)
+        //发送请求
+      }
+    })
   },
 
   /**

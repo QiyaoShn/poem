@@ -2,19 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  background-color:#46AEF0 ;
 }
-
+.buju{
+  display: flex;
+  justify-content: center;
+}
 .avatar{
   width: 150rpx;
   height: 150rpx;
-  border-radius: 100rpx;
+  border-radius: 50%;
+  border: 2px #EEECEC solid;
   margin:50rpx 0;
-
+  overflow:hidden;
 }
 .userName{
   font-size: 32rpx;
   font-weight: bold;
   margin:10rpx 0;
+  color: #ffffff;
 }
 button {
   position: absolute;
@@ -41,17 +48,20 @@ button {
   width: 40px;
   height: 40px;
   margin: 10px;
-  
+  margin-top: 25rpx;
 }
 
 .line {
-  background-color: #EEECEC;
-  height: 20rpx;
+  background-color: #46AEF0;
+  height: 100rpx;
+  margin-top: -45rpx;
+  border-bottom:3px solid #EEECEC;
 }
 .jj {
   display: flex;
   border-bottom: 1px solid #EEECEC;
   margin: 10px 10px;
+  margin-top: -25rpx;
 }
 .wd {
   margin: 20px 50px 0px 0px;
@@ -70,14 +80,14 @@ button {
   position: relative;
   color: #605D5D;
   left: 250rpx;
-  top: 45rpx;
+  top: 35rpx;
   font-size: 14px;
 }
 .zza1 {
   position: relative;
   color: #605D5D;
   left: 310rpx;
-  top: 45rpx;
+  top: 35rpx;
   font-size: 14px;
 }
 .pt1{
@@ -93,7 +103,7 @@ button {
   width: 40rpx;
   height: 25px;
   right: -270rpx;
-
+margin-top: 30rpx;
   color: #605D5D;
   font-size: 25px;
 }
@@ -102,7 +112,7 @@ button {
   width: 40rpx;
   height: 25px;
   right: -330rpx;
-
+  margin-top: 30rpx;
   color: #605D5D;
   font-size: 25px;
 }
@@ -111,7 +121,7 @@ button {
   width: 40rpx;
   height: 25px;
   right: -385rpx;
-  top: 33rpx;
+  margin-top:30rpx;
   color: #605D5D;
   font-size: 25px;
 }

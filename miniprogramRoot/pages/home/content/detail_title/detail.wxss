@@ -3,8 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-inline: 60rpx;
-  margin-top: 30rpx;
+  margin-inline: 80rpx;
+  margin-left: 20rpx;
+  margin-top: 50rpx; 
+} 
+.buchong{ 
+  position: absolute; 
+  width: 713rpx; 
+  height: 33rpx; 
+  top: 20rpx 
 }
 .shoucang-position{
   display: flex;
@@ -15,9 +22,31 @@
   height: 24px;
   font-size: 24px;
   left: 80rpx;
-  margin-top: 15rpx;
+  margin-top: 35rpx;
 }
-
+.laba-0{
+  font-size: 20px;
+  margin-left: 20rpx;
+  color: #BBBBBB;
+}
+.laba-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 80rpx;
+}
+.laba-2{
+  font-size: 27px;
+  margin-left: 50rpx;
+  color: #4c7ee9;
+  margin-top:30rpx
+}
+.da-yin{
+  position: absolute;
+  font-size: 22px;
+  left: 80rpx;
+  margin-top: 125rpx;
+}
 .gushi_detail{
   display: flex;
   flex-direction: column;
@@ -95,8 +124,8 @@
 .button-position{
   display: flex;
   height: 200rpx;
-  background-color: white;
-  border-top: 3rpx solid #D2CFCF;
+  background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.huabanimg.com%2F4926f10a71dfc02b35d391c1afe333cbac9c320b64370-z6UyTX_fw658&refer=http%3A%2F%2Fhbimg.huabanimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624020508&t=cece99011acaecd90094d18b3801f334);
+  border-top: 2rpx solid #D2CFCF;
   box-shadow:2rpx 2rpx 1rpx 4rpx #EEECEC;
   position: fixed;
   left: 0rpx;
@@ -122,9 +151,10 @@
   margin-left: 85rpx;
 }
 .gushi-page{
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  background-color: #FBFAF5;
+  margin-top: -50rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.yipic.cn%2Fthumb%2Fdbad4b50%2F854790aa%2Fe957942b%2Fda4d5de8%2Fbig_dbad4b50854790aae957942bda4d5de8.png%3Fx-oss-process%3Dimage%2Fformat%2Cwebp%2Fsharpen%2C100&refer=http%3A%2F%2Fimg.yipic.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624018649&t=86cc1fe44b7e6fd98ef33edc1dffcc5f");
   height: 100%;
   margin-bottom: 300rpx;
 }
