@@ -1,0 +1,5 @@
+
+ <view >
+<button type="primary" bindtap="click1">播放</button>
+<button type="primary" bindtap="stop">暂停</button>
+</view>

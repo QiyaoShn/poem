@@ -1,0 +1,43 @@
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+  font-size: 19px;
+  font-weight: 600;
+  
+}
+.center{
+  flex-wrap: wrap;
+  padding: 0rpx 25rpx;
+}
+
+.find{
+  width: 24rpx;
+  height: 24rpx;
+  margin: 0 30rpx;
+}
+
+.classify{
+    background-color: #fff;
+    border: 1rpx solid #EB602E;
+    border-radius: 30%;
+    width: 125rpx;
+    height: 100%;    
+    
+    float: left;
+    margin: 0 25rpx;
+    margin-top: 30rpx;
+    letter-spacing: 0rpx;
+}
+
+.search{
+  background-color: #fff;
+  border: 3rpx solid #dcdcdc;
+  border-radius: 40%;
+  width: 350rpx;
+  height: 100%;    
+  
+  margin: 0 30rpx;
+  margin-top: 30rpx;
+  letter-spacing: 0rpx;
+}
