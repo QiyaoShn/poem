@@ -75,11 +75,11 @@ Page({
         //赋值，没有这一步的话，前台就不会显示值      
         this.setData({
           subject: res.data
-        })
-       
+        });
+       audioo.src=this.data.subject[options.id-1].src;
         for (let i = 0; i < this.data.subject.length; i++) {
           if(this.data.subject[i].id == options.id)
-          {this.data.subject[options.id].id
+          {
             console.log("yes")
             this.setData({
               detail_id: options.id
@@ -90,21 +90,20 @@ Page({
             times: i
           })
       }
-      
+      console.log("2dewd");
+      console.log(this.data.subject[options.id].src);
       }
       
     });
     
   },
 
- yinping:function(e){
-  audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3";
-  
-    audioo.play();
-    wx.showToast({
-      title: '长摁播放',
-    })
- },
+  yinping:function(e){
+      audioo.play();
+      wx.showToast({
+        title: '长摁播放',
+      })
+   },
  ZanTing:function(e){
   audioo.pause();
   console.log("暂停");
