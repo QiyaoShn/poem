@@ -75,7 +75,7 @@ Page({
         this.setData({
           subject: res.data
         })
-        
+        audioo.src=this.data.subject[options.id-1].src;
         for (let i = 0; i < this.data.subject.length; i++) {
           if(this.data.subject[i].id == options.id)
           {this.data.subject[options.id].id
@@ -97,7 +97,6 @@ Page({
   },
 
  yinping:function(e){
-  audioo.src="cloud://asd-8i5n5.6173-asd-8i5n5-1302530311/《初中必背古诗文》20饮酒 .mp3";
   
     audioo.play();
     wx.showToast({
